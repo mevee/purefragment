@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".fragments.SecondFragment"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width24"
+        android:layout_gravity="top"
+        android:orientation="horizontal">
+<ImageView
+    android:layout_width="@dimen/margin60dp"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"/>
+        <ImageView
+            android:layout_width="@dimen/margin60dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/width24"
+            android:background="@color/colorBlack"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/width24"
+            android:background="@color/colorBlack"/>
+
+        <RelativeLayout
+            android:layout_width="@dimen/width74"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@color/colorWhite">
+            <ImageView
+                android:id="@+id/i"
+                android:layout_width="@dimen/width24"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tvscore"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+            <ImageView
+                android:id="@+id/i2"
+                android:layout_width="@dimen/width24"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="@dimen/width"
+        android:layout_height="@dimen/width"
+        android:layout_gravity="center"
+        android:background="@drawable/bgforludoboard"
+        android:src="@drawable/game_board_3"
+        android:padding="6dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="@dimen/userimagesize"
+        android:layout_height="@dimen/userimageandnamelayoutwidth"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/margin70dp"
+        >
+        <ImageView
+            android:id="@+id/user2image"
+            android:layout_width="@dimen/userimagesize"
+            android:layout_height="@dimen/userimagesize"
+            android:background="@drawable/bgforroundimage"/>
+        <TextView
+            android:id="@+id/user3name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user2image"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:maxLength="7"
+            android:ellipsize="marquee"
+            android:textSize="8sp"
+            android:text="username"
+            android:textColor="@color/colorWhite"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/userimagesize"
+        android:layout_height="@dimen/userimagesize"
+        android:background="@drawable/bgforludored"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="@dimen/margin70dp"
+        >
+        <ImageView
+            android:id="@+id/ludo2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/userimagesize"
+        android:layout_height="@dimen/userimageandnamelayoutwidth"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="@dimen/margin60dp"
+        >
+        <ImageView
+            android:id="@+id/userimage"
+            android:layout_width="@dimen/userimagesize"
+            android:layout_height="@dimen/userimagesize"
+            android:background="@drawable/bgforroundimage"/>
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userimage"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:maxLength="7"
+            android:ellipsize="marquee"
+            android:textSize="8sp"
+            android:text="username"
+            android:textColor="@color/colorWhite"
+            android:singleLine="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/userimagesize"
+        android:layout_height="@dimen/userimagesize"
+        android:background="@drawable/bgforludored"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="55dp"
+        android:layout_marginBottom="@dimen/margin70dp"
+        >
+        <ImageView
+            android:id="@+id/ludo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"/>
+           </RelativeLayout>
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/addheight"
+    android:background="@color/colorAddindicator"
+    android:layout_gravity="bottom"/>
+
+</FrameLayout>

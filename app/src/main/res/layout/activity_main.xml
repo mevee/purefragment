@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<FrameLayout
+    android:id="@+id/rootlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+</FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnfirstfrag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1-frag" />
+
+        <Button
+            android:id="@+id/btnsecondfrag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2-frag" />
+
+        <!--<Button-->
+            <!--android:id="@+id/btnthirdfrag"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="3-frag" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btnfourthfrag"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="4-frag" />-->
+
+    </LinearLayout>
+
+</RelativeLayout>

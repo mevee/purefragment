@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="width">350dp</dimen>
+    <dimen name="widthsquare">368dp</dimen>
+    <dimen name="squareradious">4dp</dimen>
+    <dimen name="widthsignlesquare148">148dp</dimen>
+    <dimen name="width24">24.6dp</dimen>
+    <dimen name="width74">74dp</dimen>
+    <dimen name="strokewidth1dp">1dp</dimen>
+    <dimen name="addheight">28dp</dimen>
+    <dimen name="userimagesize">40dp</dimen>
+    <dimen name="userimageandnamelayoutwidth">55dp</dimen>
+    <dimen name="margin60dp">60dp</dimen>
+    <dimen name="margin50dp">50dp</dimen>
+    <dimen name="margin70dp">74dp</dimen>
+    <dimen name="padding6dp">6dp</dimen>
+
+
+
+
+</resources>

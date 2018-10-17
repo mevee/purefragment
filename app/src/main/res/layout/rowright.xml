@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/widthsignlesquare148"
+    android:layout_height="@dimen/width74"
+    android:background="@color/colorRed">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/width24"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/width24"
+                android:layout_height="match_parent"
+                android:background="@drawable/stroke"/>
+            <ImageView
+                android:layout_width="@dimen/width24"
+                android:layout_height="match_parent"
+                android:background="@drawable/stroke"/>
+            <ImageView
+                android:layout_width="@dimen/width24"
+                android:layout_height="match_parent"
+                android:background="@drawable/stroke"/>
+            <ImageView
+                android:layout_width="@dimen/width24"
+                android:layout_height="match_parent"
+                android:background="@drawable/stroke"/>
+            <ImageView
+                android:layout_width="@dimen/width24"
+                android:layout_height="match_parent"
+                android:background="@drawable/stroke"/>
+            <ImageView
+                android:layout_width="@dimen/width24"
+                android:layout_height="match_parent"
+                android:background="@drawable/stroke"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/width24"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/width24"
+                android:layout_height="match_parent"
+                />
+            <ImageView
+                android:layout_width="@dimen/width24"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:layout_width="@dimen/width24"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:layout_width="@dimen/width24"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:layout_width="@dimen/width24"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:layout_width="@dimen/width24"
+                android:layout_height="match_parent"
+                android:background="@drawable/stroke"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/width24"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/width24"
+                android:layout_height="match_parent"
+                android:background="@drawable/stroke"/>
+            <ImageView
+                android:layout_width="@dimen/width24"
+                android:layout_height="match_parent"
+                android:background="@drawable/stroke"/>
+            <ImageView
+                android:layout_width="@dimen/width24"
+                android:layout_height="match_parent"
+                android:background="@drawable/stroke"/>
+            <ImageView
+                android:layout_width="@dimen/width24"
+                android:layout_height="match_parent"
+                android:background="@drawable/stroke"/>
+            <ImageView
+                android:layout_width="@dimen/width24"
+                android:layout_height="match_parent"
+                android:background="@drawable/strokblank"/>
+            <ImageView
+                android:layout_width="@dimen/width24"
+                android:layout_height="match_parent"
+                android:background="@drawable/stroke"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
