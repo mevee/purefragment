@@ -8,6 +8,7 @@
     <dimen name="lenth10">10dp</dimen>
     <dimen name="width15">15dp</dimen>
     <dimen name="width16">16dp</dimen>
+    <dimen name="width18">18dp</dimen>
     <dimen name="lenth20">20dp</dimen>
     <dimen name="width24">24.6dp</dimen>
     <dimen name="lenth26">26dp</dimen>
@@ -25,9 +26,11 @@
     <dimen name="userimageandnamelayoutwidth">55dp</dimen>
     <dimen name="margin60dp">60dp</dimen>
     <dimen name="margin65dp">65dp</dimen>
+    <dimen name="margin67dp">67dp</dimen>
     <dimen name="margin40dp">40dp</dimen>
     <dimen name="margin50dp">50dp</dimen>
     <dimen name="margin45dp">45dp</dimen>
+    <dimen name="margin72dp">72dp</dimen>
 
 
     <dimen name="margin70dp">74dp</dimen>

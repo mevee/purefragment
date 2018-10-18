@@ -65,39 +65,47 @@
 
 
     <RelativeLayout
-        android:layout_width="@dimen/margin45dp"
+        android:layout_width="@dimen/width100"
         android:layout_height="@dimen/width24"
         android:layout_gravity="right|top"
         android:layout_marginHorizontal="@dimen/lenth10"
         android:layout_marginTop="4dp"
         android:visibility="visible">
+        <LinearLayout
+            android:layout_width="@dimen/margin70dp"
+            android:layout_height="@dimen/lenth20"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="4dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="1"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorWhite"
+                android:layout_weight="2"
+                android:background="@color/colorBlack"
+                />
+            <ImageView
+                android:id="@+id/i2"
+                android:layout_width="@dimen/width15"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bgforaddmore"
+                android:src="@drawable/add"
+                android:layout_weight=".2"
+                />
+        </LinearLayout>
         <ImageView
             android:id="@+id/i"
             android:layout_width="@dimen/lenth26"
             android:layout_height="@dimen/lenth26"
             android:src="@drawable/gem"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="12dp"
             />
-        <TextView
-            android:id="@+id/tvscore"
-            android:layout_width="@dimen/margin45dp"
-            android:layout_height="@dimen/lenth30"
-            android:layout_marginTop="4dp"
-            android:textSize="@dimen/width8"
-            android:gravity="center"
-            android:layout_marginRight="@dimen/lenth10"
-            android:text="1"
-            android:textColor="@color/colorWhite"
-            android:background="@color/colorBlack"/>
-
-        <ImageView
-            android:id="@+id/i2"
-            android:layout_width="@dimen/width15"
-            android:layout_height="@dimen/width24"
-            android:layout_marginTop="4dp"
-            android:layout_alignParentRight="true"
-            android:background="@drawable/bgforaddmore"
-            android:src="@drawable/add"
-             />
     </RelativeLayout>
 
     <RelativeLayout
@@ -348,7 +356,7 @@
         android:layout_width="@dimen/userimagesize"
         android:layout_height="@dimen/userimageandnamelayoutwidth"
         android:layout_gravity="bottom|left"
-        android:layout_marginBottom="@dimen/margin65dp"
+        android:layout_marginBottom="@dimen/margin67dp"
         android:layout_marginLeft="10dp"
         android:visibility="visible">
 
@@ -381,7 +389,7 @@
         android:layout_width="@dimen/margin45dp"
         android:layout_height="@dimen/margin45dp"
         android:layout_gravity="bottom|left"
-        android:layout_marginBottom="@dimen/margin70dp"
+        android:layout_marginBottom="@dimen/margin72dp"
         android:layout_marginLeft="55dp"
         android:background="@drawable/reddice_bg"
         android:visibility="visible">
@@ -400,7 +408,7 @@
         android:layout_width="@dimen/width24"
         android:layout_height="@dimen/userimagesize"
         android:layout_gravity="bottom|left"
-        android:layout_marginBottom="@dimen/margin70dp"
+        android:layout_marginBottom="@dimen/margin72dp"
         android:layout_marginLeft="@dimen/width110">
        <ImageView
            android:layout_width="@dimen/lenth20"
@@ -425,7 +433,7 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="@dimen/width16"
+        android:layout_height="@dimen/width18"
         android:layout_gravity="bottom|left"
         android:layout_marginBottom="@dimen/margin45dp"
         android:layout_marginLeft="@dimen/lenth10"

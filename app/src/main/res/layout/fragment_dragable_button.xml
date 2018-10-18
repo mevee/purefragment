@@ -19,5 +19,5 @@
         android:layout_gravity="bottom|center"
         android:layout_marginBottom="@dimen/addheig50dp"
         android:background="@color/colorBlue"
-        android:visibility="gone"/>
+        android:visibility="visible"/>
   </FrameLayout>

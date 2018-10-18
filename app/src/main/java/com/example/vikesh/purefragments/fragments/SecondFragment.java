@@ -2,6 +2,7 @@ package com.example.vikesh.purefragments.fragments;
 
 
 import android.animation.ObjectAnimator;
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -36,11 +37,16 @@ public class SecondFragment extends Fragment {
         // Inflate the layout for this fragment
         mView = inflater.inflate(R.layout.fragment_second, container, false);
         init();
+        ludoRed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+            }
+        });
         btnonplay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//            ludoRed.setVisibility(View.VISIBLE);
+           ludoRed.setVisibility(View.VISIBLE);
                if(token){
                    ludoRed.setVisibility(View.VISIBLE);
                    ludoRed.setOnClickListener(new View.OnClickListener() {
@@ -48,6 +54,7 @@ public class SecondFragment extends Fragment {
                        public void onClick(View v) {
                            token=true;
                            Log.d("clicked","yes"+token);
+
 //                           tokenBlue1.setVisibility(View.VISIBLE);
 //                           tokenBlue2.setVisibility(View.VISIBLE);
 //                           tokenBlue3.setVisibility(View.VISIBLE);

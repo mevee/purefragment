@@ -478,29 +478,29 @@ public final class R {
         public static final int hint_alpha_material_light = 0x7f06008d;
         public static final int hint_pressed_alpha_material_dark = 0x7f06008e;
         public static final int hint_pressed_alpha_material_light = 0x7f06008f;
-        public static final int notification_action_icon_size = 0x7f0600d0;
-        public static final int notification_action_text_size = 0x7f0600d1;
-        public static final int notification_big_circle_margin = 0x7f0600d2;
-        public static final int notification_content_margin_start = 0x7f0600d3;
-        public static final int notification_large_icon_height = 0x7f0600d4;
-        public static final int notification_large_icon_width = 0x7f0600d5;
-        public static final int notification_main_column_padding_top = 0x7f0600d6;
-        public static final int notification_media_narrow_margin = 0x7f0600d7;
-        public static final int notification_right_icon_size = 0x7f0600d8;
-        public static final int notification_right_side_padding_top = 0x7f0600d9;
-        public static final int notification_small_icon_background_padding = 0x7f0600da;
-        public static final int notification_small_icon_size_as_large = 0x7f0600db;
-        public static final int notification_subtext_size = 0x7f0600dc;
-        public static final int notification_top_pad = 0x7f0600dd;
-        public static final int notification_top_pad_large_text = 0x7f0600de;
-        public static final int tooltip_corner_radius = 0x7f0600e7;
-        public static final int tooltip_horizontal_padding = 0x7f0600e8;
-        public static final int tooltip_margin = 0x7f0600e9;
-        public static final int tooltip_precise_anchor_extra_offset = 0x7f0600ea;
-        public static final int tooltip_precise_anchor_threshold = 0x7f0600eb;
-        public static final int tooltip_vertical_padding = 0x7f0600ec;
-        public static final int tooltip_y_offset_non_touch = 0x7f0600ed;
-        public static final int tooltip_y_offset_touch = 0x7f0600ee;
+        public static final int notification_action_icon_size = 0x7f0600d2;
+        public static final int notification_action_text_size = 0x7f0600d3;
+        public static final int notification_big_circle_margin = 0x7f0600d4;
+        public static final int notification_content_margin_start = 0x7f0600d5;
+        public static final int notification_large_icon_height = 0x7f0600d6;
+        public static final int notification_large_icon_width = 0x7f0600d7;
+        public static final int notification_main_column_padding_top = 0x7f0600d8;
+        public static final int notification_media_narrow_margin = 0x7f0600d9;
+        public static final int notification_right_icon_size = 0x7f0600da;
+        public static final int notification_right_side_padding_top = 0x7f0600db;
+        public static final int notification_small_icon_background_padding = 0x7f0600dc;
+        public static final int notification_small_icon_size_as_large = 0x7f0600dd;
+        public static final int notification_subtext_size = 0x7f0600de;
+        public static final int notification_top_pad = 0x7f0600df;
+        public static final int notification_top_pad_large_text = 0x7f0600e0;
+        public static final int tooltip_corner_radius = 0x7f0600e9;
+        public static final int tooltip_horizontal_padding = 0x7f0600ea;
+        public static final int tooltip_margin = 0x7f0600eb;
+        public static final int tooltip_precise_anchor_extra_offset = 0x7f0600ec;
+        public static final int tooltip_precise_anchor_threshold = 0x7f0600ed;
+        public static final int tooltip_vertical_padding = 0x7f0600ee;
+        public static final int tooltip_y_offset_non_touch = 0x7f0600ef;
+        public static final int tooltip_y_offset_touch = 0x7f0600f0;
     }
     public static final class drawable {
         public static final int abc_ab_share_pack_mtrl_alpha = 0x7f070007;
@@ -705,9 +705,9 @@ public final class R {
         public static final int title_template = 0x7f0800da;
         public static final int top = 0x7f0800db;
         public static final int topPanel = 0x7f0800dc;
-        public static final int uniform = 0x7f0800e4;
-        public static final int up = 0x7f0800e6;
-        public static final int wrap_content = 0x7f0800f2;
+        public static final int uniform = 0x7f0800e3;
+        public static final int up = 0x7f0800e5;
+        public static final int wrap_content = 0x7f0800f1;
     }
     public static final class integer {
         public static final int abc_config_activityDefaultDur = 0x7f090000;
