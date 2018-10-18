@@ -14,6 +14,11 @@
     <dimen name="margin50dp">50dp</dimen>
     <dimen name="margin70dp">74dp</dimen>
     <dimen name="padding6dp">6dp</dimen>
+    <dimen name="margin15dp">15dp</dimen>
+    <dimen name="radious25">25dp</dimen>
+    <dimen name="l55dp">55dp</dimen>
+
+
 
 
 
