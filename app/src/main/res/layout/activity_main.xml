@@ -17,17 +17,19 @@
         android:layout_alignParentBottom="true"
         android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/btnfirstfrag"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="1-frag" />
+        <!--<Button-->
+            <!--android:id="@+id/btnfirstfrag"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="1-frag" />-->
 
         <Button
             android:id="@+id/btnsecondfrag"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2-frag" />
+            android:layout_marginLeft="@dimen/width110"
+            android:text="2-frag"
+            />
 
         <!--<Button-->
             <!--android:id="@+id/btnthirdfrag"-->

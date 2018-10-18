@@ -4,19 +4,40 @@
     <dimen name="widthsquare">368dp</dimen>
     <dimen name="squareradious">4dp</dimen>
     <dimen name="widthsignlesquare148">148dp</dimen>
+    <dimen name="width8">8dp</dimen>
+    <dimen name="lenth10">10dp</dimen>
+    <dimen name="width15">15dp</dimen>
+    <dimen name="width16">16dp</dimen>
+    <dimen name="lenth20">20dp</dimen>
     <dimen name="width24">24.6dp</dimen>
+    <dimen name="lenth26">26dp</dimen>
+    <dimen name="lenth30">30dp</dimen>
+    <dimen name="width2dp">2dp</dimen>
+    <dimen name="lenth34">34dp</dimen>
     <dimen name="width74">74dp</dimen>
+    <dimen name="width100">100dp</dimen>
+    <dimen name="width110">110dp</dimen>
+    <dimen name="width115">115dp</dimen>
+    <dimen name="width130">130dp</dimen>
     <dimen name="strokewidth1dp">1dp</dimen>
     <dimen name="addheight">28dp</dimen>
     <dimen name="userimagesize">40dp</dimen>
     <dimen name="userimageandnamelayoutwidth">55dp</dimen>
     <dimen name="margin60dp">60dp</dimen>
+    <dimen name="margin65dp">65dp</dimen>
+    <dimen name="margin40dp">40dp</dimen>
     <dimen name="margin50dp">50dp</dimen>
+    <dimen name="margin45dp">45dp</dimen>
+
+
     <dimen name="margin70dp">74dp</dimen>
     <dimen name="padding6dp">6dp</dimen>
     <dimen name="margin15dp">15dp</dimen>
     <dimen name="radious25">25dp</dimen>
     <dimen name="l55dp">55dp</dimen>
+    <dimen name="addwide320dp">55dp</dimen>
+    <dimen name="addheig50dp">55dp</dimen>
+
 
 
 

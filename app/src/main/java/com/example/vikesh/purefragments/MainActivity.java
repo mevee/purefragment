@@ -9,6 +9,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.vikesh.purefragments.fragments.DragableButtonFragment;
 import com.example.vikesh.purefragments.fragments.FirstFragment;
 import com.example.vikesh.purefragments.fragments.SecondFragment;
 
@@ -24,15 +25,15 @@ public class MainActivity extends AppCompatActivity  {
         setContentView(R.layout.activity_main);
         init();
 
-        btnFragOne.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-              fm = new FirstFragment();
-                FragmentTransaction ft = fragmentManager.beginTransaction();
-                ft.replace(rootView.getId(),fm);
-                ft.commit();
-            }
-        });
+//        btnFragOne.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//              fm = new FirstFragment();
+//                FragmentTransaction ft = fragmentManager.beginTransaction();
+//                ft.replace(rootView.getId(),fm);
+//                ft.commit();
+//            }
+//        });
         getBtnFragTwo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -67,7 +68,7 @@ public class MainActivity extends AppCompatActivity  {
 
     }
     private void init() {
-        btnFragOne = findViewById(R.id.btnfirstfrag);
+//        btnFragOne = findViewById(R.id.btnfirstfrag);
         getBtnFragTwo = findViewById(R.id.btnsecondfrag);
 //        btnFragThree = findViewById(R.id.btnfourthfrag);
 //        btnFragFour = findViewById(R.id.btnfourthfrag);

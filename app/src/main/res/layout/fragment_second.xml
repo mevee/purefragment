@@ -3,65 +3,162 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
+    android:background="@color/colorPrimaryDark"
     tools:context=".fragments.SecondFragment">
 
     <LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="@dimen/width24"
-    android:layout_gravity="top"
-    android:orientation="horizontal"
-    android:visibility="visible">
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/lenth30"
+        android:layout_gravity="top"
+        android:orientation="horizontal"
+        android:visibility="visible">
 
-    <ImageView
-        android:id="@+id/goback"
-    android:layout_width="@dimen/width24"
-    android:layout_height="match_parent"
-    android:background="@drawable/bgforgoback" />
+        <ImageView
+            android:id="@+id/goback"
+            android:layout_width="@dimen/lenth34"
+            android:layout_height="match_parent"
+            android:background="@drawable/bgforgoback"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp"/>
 
-    <ImageView
-    android:layout_width="@dimen/margin60dp"
-    android:layout_height="match_parent"
-    android:layout_marginLeft="@dimen/width24"
-    android:background="@color/colorBlack" />
+        <RelativeLayout
+            android:layout_width="@dimen/margin60dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/width24"
+            android:background="@drawable/bgforwingold">
+            <ImageView
+                android:layout_width="@dimen/lenth30"
+                android:layout_height="match_parent"
+                android:src="@drawable/game_coin_pile"
+                android:layout_marginLeft="3dp"/>
+            <TextView
+                android:layout_width="@dimen/width15"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:text="WIN"
+                android:textSize="@dimen/width8"
+                android:layout_marginTop="@dimen/width2dp"
+                android:layout_marginRight="@dimen/lenth10"
+                android:textColor="@color/colorYellow"
+                />
+            <TextView
+                android:layout_width="@dimen/width15"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:text="2k"
+                android:textSize="@dimen/width8"
+                android:layout_marginBottom="@dimen/width2dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorWhite"
+                />
+        </RelativeLayout>
 
-    <ImageView
-    android:layout_width="20dp"
-    android:layout_height="match_parent"
-    android:layout_marginLeft="@dimen/width24"
-    android:background="@color/colorBlack" />
+        <ImageView
+            android:layout_width="@dimen/lenth30"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/lenth10"
+            android:padding="4dp"
+            android:background="@drawable/bgforwingold"
+            android:src="@drawable/ic_info_outline_black_24dp" />
     </LinearLayout>
 
+
     <RelativeLayout
-    android:layout_width="@dimen/margin70dp"
-    android:layout_height="20dp"
-    android:layout_gravity="right|top"
-    android:layout_marginHorizontal="50dp"
-    android:layout_marginTop="6dp"
-    android:visibility="gone">
+        android:layout_width="@dimen/margin45dp"
+        android:layout_height="@dimen/width24"
+        android:layout_gravity="right|top"
+        android:layout_marginHorizontal="@dimen/lenth10"
+        android:layout_marginTop="4dp"
+        android:visibility="visible">
+        <ImageView
+            android:id="@+id/i"
+            android:layout_width="@dimen/lenth26"
+            android:layout_height="@dimen/lenth26"
+            android:src="@drawable/gem"
+            />
+        <TextView
+            android:id="@+id/tvscore"
+            android:layout_width="@dimen/margin45dp"
+            android:layout_height="@dimen/lenth30"
+            android:layout_marginTop="4dp"
+            android:textSize="@dimen/width8"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/lenth10"
+            android:text="1"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorBlack"/>
+
+        <ImageView
+            android:id="@+id/i2"
+            android:layout_width="@dimen/width15"
+            android:layout_height="@dimen/width24"
+            android:layout_marginTop="4dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bgforaddmore"
+            android:src="@drawable/add"
+             />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/useryellow"
+        android:layout_width="@dimen/userimagesize"
+        android:layout_height="@dimen/margin65dp"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/margin65dp"
+        android:visibility="visible">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user2image"
+            android:layout_width="@dimen/userimagesize"
+            android:layout_height="@dimen/userimagesize"
+            android:background="@drawable/yellow_stroke_circle"
+            android:src="@drawable/robot_3" />
+
+        <TextView
+            android:id="@+id/user3name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user2image"
+            android:layout_marginTop="12dp"
+            android:layout_alignParentBottom="true"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:maxLength="7"
+            android:singleLine="true"
+            android:text="username"
+            android:textColor="@color/colorWhite"
+            android:textSize="8sp" />
+    </RelativeLayout>
 
     <ImageView
-    android:id="@+id/i"
-    android:layout_width="15dp"
-    android:layout_height="30dp"
-    android:src="@drawable/gem" />
+        android:id="@+id/gift"
+        android:layout_width="@dimen/lenth20"
+        android:layout_height="@dimen/lenth20"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="@dimen/addheig50dp"
+        android:layout_marginTop="@dimen/width115"
+        android:src="@drawable/gift_icon"
+        />
 
-    <TextView
-    android:id="@+id/tvscore"
-    android:layout_width="wrap_content"
-    android:layout_height="match_parent"
-    android:layout_centerHorizontal="true"
-    android:background="@color/colorBlack"
-    android:gravity="center_horizontal"
-    android:text="1"
-    android:textColor="@color/colorWhite" />
+    <RelativeLayout
+        android:id="@+id/ludoYellow"
+        android:layout_width="@dimen/margin45dp"
+        android:layout_height="@dimen/margin45dp"
+        android:layout_gravity="top|right"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="@dimen/margin65dp"
+        android:background="@drawable/yellowdice_bg"
+        android:visibility="visible">
 
-    <ImageView
-    android:id="@+id/i2"
-    android:layout_width="@dimen/width24"
-    android:layout_height="match_parent"
-    android:layout_alignParentRight="true"
-    android:src="" />
+        <ImageView
+            android:id="@+id/ludo2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:src="@drawable/dice_1"
+            />
     </RelativeLayout>
 
     <RelativeLayout
@@ -76,7 +173,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="6dp"
-            android:src="@drawable/game_board_3" />
+            android:src="@drawable/game_board_3"
+            />
 
         <ImageView
             android:id="@+id/rtkn1"
@@ -245,95 +343,48 @@
 
     </RelativeLayout>
 
-
     <RelativeLayout
-        android:id="@+id/useryellow"
-        android:layout_width="@dimen/userimagesize"
-        android:layout_height="@dimen/userimageandnamelayoutwidth"
-        android:layout_gravity="top|right"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="@dimen/margin70dp"
-        android:visibility="gone">
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/user2image"
-            android:layout_width="@dimen/userimagesize"
-            android:layout_height="@dimen/userimagesize"
-            android:background="@drawable/bgforroundimage"
-            android:src="@drawable/robot_3" />
-
-        <TextView
-            android:id="@+id/user3name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/user2image"
-            android:layout_marginTop="3dp"
-            android:ellipsize="marquee"
-            android:gravity="center"
-            android:maxLength="7"
-            android:singleLine="true"
-            android:text="username"
-            android:textColor="@color/colorWhite"
-            android:textSize="8sp" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/ludoYellow"
-        android:layout_width="@dimen/userimagesize"
-        android:layout_height="@dimen/userimagesize"
-        android:layout_gravity="top|right"
-        android:layout_marginRight="55dp"
-        android:layout_marginTop="@dimen/margin70dp"
-        android:background="@drawable/bgforludored"
-        android:visibility="gone">
-
-        <ImageView
-            android:id="@+id/ludo2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="2dp"
-            android:src="@drawable/dice_1" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/userred"
+        android:id="@+id/user_red"
         android:layout_width="@dimen/userimagesize"
         android:layout_height="@dimen/userimageandnamelayoutwidth"
         android:layout_gravity="bottom|left"
-        android:layout_marginBottom="@dimen/margin60dp"
+        android:layout_marginBottom="@dimen/margin65dp"
         android:layout_marginLeft="10dp"
-        android:visibility="gone">
+        android:visibility="visible">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/userimage"
             android:layout_width="@dimen/userimagesize"
             android:layout_height="@dimen/userimagesize"
-            android:src="@drawable/robot_3" />
+            android:src="@drawable/robot_3"
+            android:background="@drawable/red_stroke_circle"
+            />
 
         <TextView
             android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/userimage"
-            android:layout_marginTop="3dp"
+            android:layout_marginTop="4dp"
             android:ellipsize="marquee"
             android:gravity="center"
             android:maxLength="7"
             android:singleLine="true"
             android:text="username"
             android:textColor="@color/colorWhite"
-            android:textSize="8sp" />
+            android:textSize="8sp"
+            android:visibility="gone"/>
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/ludoRed"
-        android:layout_width="@dimen/userimagesize"
-        android:layout_height="@dimen/userimagesize"
+        android:layout_width="@dimen/margin45dp"
+        android:layout_height="@dimen/margin45dp"
         android:layout_gravity="bottom|left"
         android:layout_marginBottom="@dimen/margin70dp"
         android:layout_marginLeft="55dp"
-        android:background="@drawable/bgforludored"
-        android:visibility="gone">
+        android:background="@drawable/reddice_bg"
+        android:visibility="visible">
 
         <ImageView
             android:id="@+id/ludo"
@@ -344,11 +395,99 @@
             android:src="@drawable/dice_1" />
     </RelativeLayout>
 
-    <ImageView
+    <!-- relode and dimendleft-->
+    <RelativeLayout
+        android:layout_width="@dimen/width24"
+        android:layout_height="@dimen/userimagesize"
+        android:layout_gravity="bottom|left"
+        android:layout_marginBottom="@dimen/margin70dp"
+        android:layout_marginLeft="@dimen/width110">
+       <ImageView
+           android:layout_width="@dimen/lenth20"
+           android:layout_height="@dimen/lenth20"
+           android:src="@drawable/undo"/>
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="10dp"
+            android:layout_height="12dp"
+            android:src="@drawable/gem"
+            android:layout_marginLeft="@dimen/width2dp"
+            android:layout_alignParentBottom="true"/>
+        <TextView
+           android:text="2"
+           android:layout_width="10dp"
+           android:layout_height="12dp"
+           android:textSize="9sp"
+           android:textColor="@color/colorWhite"
+           android:layout_alignParentBottom="true"
+           android:layout_toRightOf="@id/iv1"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/width16"
+        android:layout_gravity="bottom|left"
+        android:layout_marginBottom="@dimen/margin45dp"
+        android:layout_marginLeft="@dimen/lenth10"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="6dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bgrounfcornersblack">
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="@dimen/margin15dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/strokewidth1dp"
+                android:src="@drawable/emoji_icon"
+                 />
+
+            <TextView
+                android:id="@+id/emoji"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_toRightOf="@id/iv"
+                android:text="Emoji"
+                android:textColor="@color/colorWhite"
+                android:textSize="8sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="6dp"
+            android:layout_marginLeft="@dimen/width8"
+            android:background="@drawable/bgrounfcornersblack">
+
+            <ImageView
+                android:id="@+id/ivicon"
+                android:layout_width="10dp"
+                android:layout_marginLeft="@dimen/strokewidth1dp"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/strokewidth1dp"
+                android:src="@drawable/chat_icon"
+                 />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_toRightOf="@id/ivicon"
+                android:text="Chat"
+                android:textColor="@color/colorWhite"
+                android:textSize="8sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
         android:layout_width="match_parent"
-        android:layout_height="@dimen/addheight"
+        android:layout_height="@dimen/lenth34"
         android:layout_gravity="bottom"
-        android:background="@color/colorAddindicator" />
+        />
 
     <Button
         android:id="@+id/btnplay"

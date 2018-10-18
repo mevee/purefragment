@@ -37,7 +37,6 @@ public class SecondFragment extends Fragment {
         mView = inflater.inflate(R.layout.fragment_second, container, false);
         init();
 
-
         btnonplay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -73,6 +72,15 @@ public class SecondFragment extends Fragment {
                    tokenYellow2.setVisibility(View.VISIBLE);
                    tokenYellow3.setVisibility(View.VISIBLE);
                    tokenYellow4.setVisibility(View.VISIBLE);
+                   tokenBlue1.setVisibility(View.VISIBLE);
+                           tokenBlue2.setVisibility(View.VISIBLE);
+                           tokenBlue3.setVisibility(View.VISIBLE);
+                           tokenBlue4.setVisibility(View.VISIBLE);
+
+                           tokenGreen1.setVisibility(View.VISIBLE);
+                           tokenGreen2.setVisibility(View.VISIBLE);
+                           tokenGreen3.setVisibility(View.VISIBLE);
+                           tokenGreen4.setVisibility(View.VISIBLE);
                    ludoYellow.setOnClickListener(new View.OnClickListener() {
                        @Override
                        public void onClick(View v) {
@@ -94,7 +102,7 @@ public class SecondFragment extends Fragment {
 
         ludoRed =mView.findViewById(R.id.ludoRed);
         ludoYellow =mView.findViewById(R.id.ludoYellow);
-        userred = mView.findViewById(R.id.userred);
+        userred = mView.findViewById(R.id.user_red);
         useryelow = mView.findViewById(R.id.useryellow);
 
         tokenBlue1 = mView.findViewById(R.id.bytkn1);
