@@ -47,8 +47,6 @@
     <dimen name="addwide320dp">55dp</dimen>
     <dimen name="addheig50dp">55dp</dimen>
     <dimen name="radiousCurve">10dp</dimen>
-
-
-
+    <dimen name="addHeight">32dp</dimen>
 
 </resources>

@@ -15,6 +15,9 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 import com.example.vikesh.purefragments.R;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -29,7 +32,7 @@ public class SecondFragment extends Fragment implements View.OnClickListener {
     private View tokenBlue1,tokenBlue2,tokenBlue3,tokenBlue4;
     private View tokenRed1,tokenRed2,tokenRed3,tokenRed4;
     private boolean token;
-
+    private AdView mAdView;
     public SecondFragment() {
         // Required empty public constructor
     }
@@ -118,6 +121,14 @@ public class SecondFragment extends Fragment implements View.OnClickListener {
     }
 
     private void init() {
+        AdView adView = new AdView(getActivity());
+        adView.setAdSize(AdSize.BANNER);
+        adView.setAdUnitId("ca-app-pub-3940256099942544/6300978111");
+        mAdView = mView.findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
+// TODO: Add adView to your view hierarchy.
         ludoBlue =mView.findViewById(R.id.ludo_image_view_blue);
         ludoGreen =mView.findViewById(R.id.ludo_image_view_green);
         ludoRed =mView.findViewById(R.id.ludo_image_view_red);
