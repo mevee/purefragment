@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/colorRed" />
+   &lt;!&ndash; <stroke
+        android:width="@dimen/playerInfoCardStrokeWidth_quickMatch"
+        android:color="@color/yellow_home" />&ndash;&gt;
+
+    <corners android:bottomLeftRadius="@dimen/playerCardCorners_quickMatch"
+        android:bottomRightRadius="@dimen/playerCardCorners_quickMatch"/>
+</shape>-->
+<!--<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="false">
+        <layer-list>
+            <item android:drawable="@drawable/cancel"
+                android:top="@dimen/playerInfoCardStrokeWidth_quickMatch"/>
+        </layer-list>
+    </item>
+    <item android:state_pressed="true">
+        <layer-list>
+            <item android:drawable="@drawable/cancel"
+                android:top="@dimen/margin_5"
+                android:left="@dimen/mediumStrokeWidth"
+                android:bottom="@dimen/mediumStrokeWidth"
+                android:right="@dimen/mediumStrokeWidth"/>
+        </layer-list>
+    </item>
+</selector>-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+            android:shape="rectangle">
+            <!--<solid android:color="@color/colorRed" />-->
+            <gradient android:startColor="#5e0060"
+                android:endColor="#420044"
+                android:angle="270"/>
+            <!-- <stroke
+                 android:width="@dimen/playerInfoCardStrokeWidth_quickMatch"
+                 android:color="@color/yellow_home" />-->
+
+            <corners android:bottomLeftRadius="@dimen/playerCardCorners_quickMatch"
+                android:bottomRightRadius="@dimen/playerCardCorners_quickMatch"/>
+        </shape>
+    </item>
+    <item android:top="@dimen/playerCardCorners_quickMatch"
+        android:bottom="@dimen/playerCardCorners_quickMatch"
+        android:left="@dimen/playerCardCorners_quickMatch"
+        android:right="@dimen/playerCardCorners_quickMatch"
+        android:drawable="@drawable/cancel"/>
+</layer-list>
+
+

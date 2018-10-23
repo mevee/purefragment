@@ -15,6 +15,7 @@
     <dimen name="lenth30">30dp</dimen>
     <dimen name="width2dp">2dp</dimen>
     <dimen name="lenth34">34dp</dimen>
+    <dimen name="lenth36">36dp</dimen>
     <dimen name="width74">74dp</dimen>
     <dimen name="width100">100dp</dimen>
     <dimen name="width110">110dp</dimen>
@@ -29,20 +30,23 @@
     <dimen name="margin67dp">67dp</dimen>
     <dimen name="margin40dp">40dp</dimen>
     <dimen name="margin50dp">50dp</dimen>
+    <dimen name="margin52dp">52dp</dimen>
     <dimen name="margin45dp">45dp</dimen>
     <dimen name="margin72dp">72dp</dimen>
+    <dimen name="margin82dp">82dp</dimen>
+    <dimen name="margin86dp">86dp</dimen>
 
+    <dimen name="lenth120dp">120dp</dimen>
+    <dimen name="lenth125dp">125dp</dimen>
 
-    <dimen name="margin70dp">74dp</dimen>
+    <dimen name="margin70dp">70dp</dimen>
     <dimen name="padding6dp">6dp</dimen>
     <dimen name="margin15dp">15dp</dimen>
     <dimen name="radious25">25dp</dimen>
     <dimen name="l55dp">55dp</dimen>
     <dimen name="addwide320dp">55dp</dimen>
     <dimen name="addheig50dp">55dp</dimen>
-
-
-
+    <dimen name="radiousCurve">10dp</dimen>
 
 
 

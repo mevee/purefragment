@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+android:shape="rectangle">
+<solid android:color="#170683"/>
+<corners android:radius="@dimen/homeTileTextHeight"/>
+</shape>
+<!--<nine-patch android:src="@drawable/blue_button_bg_active"-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android" />-->

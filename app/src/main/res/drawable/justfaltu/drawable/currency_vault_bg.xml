@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:start="@dimen/roomTypeStripElevation_quickMatch"
+        android:top="@dimen/playerInfoCardStrokeWidth_quickMatch"
+        android:bottom="@dimen/playerInfoCardStrokeWidth_quickMatch">
+
+    </item>
+    &lt;!&ndash;<item
+        android:start=""
+        android:drawable="@drawable/add_currency_button"/>&ndash;&gt;
+</layer-list>-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/topBarItemBgColor" />
+    <corners android:radius="@dimen/activity_horizontal_margin" />
+</shape>

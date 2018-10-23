@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="@dimen/newGameBoardPadding" />
+            <solid android:color="@color/blackText"/>
+        </shape>
+    </item>
+
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <corners android:radius="@dimen/newGameBoardPadding" />
+                <gradient
+                    android:startColor="#80ffd300"
+                    android:centerColor="#80ffb600"
+                    android:centerY="0.75"
+                    android:endColor="#a0ffcb00"
+                    android:angle="270"
+                    />
+            </shape>
+        </clip>
+    </item>
+    <item
+        android:id="@android:id/progress">
+        <scale android:scaleWidth="100%">
+            <layer-list>
+                <!--<item>
+                    <shape>
+                        <corners android:radius="@dimen/leaveButton_height" />
+                        <solid android:color="@color/white"/>
+                    </shape>
+                </item>-->
+                <item>
+                    <shape>
+                        <corners android:radius="@dimen/newGameBoardPadding" />
+                        <gradient android:startColor="#50c706"
+                            android:centerColor="#3f8f0f"
+                            android:endColor="#174a00"
+                            android:angle="270"/>
+                    </shape>
+                </item>
+                <!--<item
+                    android:top="@dimen/mediumStrokeWidth">
+                    <shape>
+                        <corners android:radius="@dimen/leaveButton_height" />
+                        <gradient android:startColor="#50c706"
+                            android:centerColor="#3f8f0f"
+                            android:endColor="#174a00"
+                            android:angle="270"/>
+                    </shape>
+                </item>-->
+            </layer-list>
+        </scale>
+    </item>
+
+</layer-list>

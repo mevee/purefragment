@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+            android:shape="rectangle">
+            <solid android:color="#11ffffff"/>
+            <corners android:bottomRightRadius="@dimen/inactivePlayerTextSideMargin"
+                android:bottomLeftRadius="@dimen/inactivePlayerTextSideMargin"/>
+        </shape>
+    </item>
+    <item
+        android:bottom="@dimen/smallSizedStroke">
+        <shape
+            android:shape="rectangle">
+            <solid android:color="@color/newDialogActiveAreaBg"/>
+            <stroke android:color="#66000000"
+                android:width="@dimen/smallSizedStroke"/>
+            <corners android:bottomRightRadius="@dimen/inactivePlayerTextSideMargin"
+                android:bottomLeftRadius="@dimen/inactivePlayerTextSideMargin"/>
+
+        </shape>
+    </item>
+</layer-list>

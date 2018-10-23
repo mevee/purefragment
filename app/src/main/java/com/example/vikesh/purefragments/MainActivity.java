@@ -12,6 +12,7 @@ import android.widget.Button;
 import com.example.vikesh.purefragments.fragments.DragableButtonFragment;
 import com.example.vikesh.purefragments.fragments.FirstFragment;
 import com.example.vikesh.purefragments.fragments.SecondFragment;
+import com.example.vikesh.purefragments.fragments.ThirdFragment;
 
 public class MainActivity extends AppCompatActivity  {
     private View rootView;
@@ -75,11 +76,14 @@ public class MainActivity extends AppCompatActivity  {
         fragmentManager = getSupportFragmentManager();
         rootView = findViewById(R.id.rootlayout);
 
-
     }
 
     @Override
     protected void onStart() {
+        int count = getSupportFragmentManager().getBackStackEntryCount();
+        if(count<1)
         super.onStart();
+        else
+            getSupportFragmentManager().popBackStack();
     }
 }

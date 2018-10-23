@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/buttonTextStrokeColor"/>
+    <stroke android:color="@color/dialogTitleColor"
+        android:dashWidth="@dimen/playerCardCorners_quickMatch"
+        android:dashGap="@dimen/mediumStrokeWidth"
+        android:width="@dimen/smallSizedStroke"/>
+    <corners android:radius="@dimen/newGameDpPadding"/>
+</shape>

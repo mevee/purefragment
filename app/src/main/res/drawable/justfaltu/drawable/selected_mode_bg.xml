@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:state_selected="true">
+    <shape android:shape="rectangle">
+        <gradient android:startColor="#a5e338"
+            android:endColor="#03be2e"
+            android:angle="270"/>
+        <corners android:radius="@dimen/newGameDpPadding" />
+    </shape>
+</item>
+    <item android:state_selected="false">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="#11ffffff" />
+                    <corners android:radius="@dimen/newGameDpPadding" />
+                </shape>
+            </item>
+            <item android:bottom="@dimen/smallSizedStroke">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/newDialogActiveAreaBg" />
+                    <stroke
+                        android:width="@dimen/smallSizedStroke"
+                        android:color="#66000000" />
+                    <corners android:radius="@dimen/newGameDpPadding" />
+
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

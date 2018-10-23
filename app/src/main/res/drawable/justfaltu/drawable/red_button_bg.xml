@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <!--<layer-list>-->
+            <!--<item>-->
+
+                <!--<shape android:shape="rectangle">
+                    <gradient android:startColor="#f2752f"
+                        android:centerColor="#b74507"
+                        android:endColor="#b94707"
+                        android:angle="270"/>
+                    <corners android:radius="@dimen/homeTileTextHeight"/>
+                </shape>-->
+        <nine-patch android:src="@drawable/orange_button_bg_normal"
+            android:dither="true"/>
+
+        <!--<layer-list>
+            <item
+                android:top="@dimen/mediumStrokeWidth">
+                <shape android:shape="rectangle">
+                    <solid android:color="#712000"/>
+                    <corners android:radius="@dimen/homeTileTextHeight"/>
+                </shape>
+            </item>
+
+            <item
+                android:bottom="@dimen/mediumStrokeWidth">
+                <shape android:shape="rectangle">
+                    <gradient android:startColor="#f2752f"
+                        android:centerColor="#b74507"
+                        android:endColor="#b94707"
+                        android:angle="270"/>
+                    <corners android:radius="@dimen/homeTileTextHeight"/>
+                </shape>
+            </item>
+        </layer-list>-->
+
+            <!--</item>-->
+            <!--<item
+                android:top="@dimen/homeTileTextHeight">
+                <clip android:clipOrientation="vertical">
+                    <shape android:shape="rectangle">
+                        <solid android:color="#b74507" />
+                        <corners android:radius="@dimen/activity_horizontal_margin" />
+                    </shape>
+                </clip>
+
+            </item>-->
+        <!--</layer-list>-->
+
+        <!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+            <item
+                android:bottom="@dimen/homeTileTextLeftPadding">
+                <shape
+                    android:shape="rectangle">
+                    <solid android:color="#f2752f" />
+                    &lt;!&ndash;<corners&ndash;&gt;
+                    &lt;!&ndash;android:bottomRightRadius="@dimen/activity_horizontal_margin"&ndash;&gt;
+                    &lt;!&ndash;android:topRightRadius="@dimen/activity_horizontal_margin"/>&ndash;&gt;
+                    <corners android:radius="@dimen/homeTileTextHeight" />
+                </shape>
+            </item>
+            <item
+                android:top="@dimen/homeTileTextLeftPadding">
+                <shape
+                    android:shape="rectangle">
+                    <solid android:color="@color/playerNameContainerBg" />
+                    &lt;!&ndash;<corners&ndash;&gt;
+                    &lt;!&ndash;android:bottomRightRadius="@dimen/activity_horizontal_margin"&ndash;&gt;
+                    &lt;!&ndash;android:topRightRadius="@dimen/activity_horizontal_margin"/>&ndash;&gt;
+                    <corners android:radius="@dimen/homeTileTextHeight" />
+                </shape>
+            </item>
+            &lt;!&ndash;<item
+                android:top="@dimen/mediumStrokeWidth"
+                android:bottom="@dimen/mediumStrokeWidth">
+                <shape xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:shape="rectangle">
+                    <solid android:color="#af4545" />
+                    &lt;!&ndash;<corners&ndash;&gt;
+                    &lt;!&ndash;android:bottomRightRadius="@dimen/activity_horizontal_margin"&ndash;&gt;
+                    &lt;!&ndash;android:topRightRadius="@dimen/activity_horizontal_margin"/>&ndash;&gt;
+                    <corners android:radius="@dimen/activity_horizontal_margin" />
+                </shape>
+            </item>&ndash;&gt;
+        </layer-list>-->
+    </item>
+        <!--android:drawable="@drawable/home_button_normal"/>-->
+    <item android:state_pressed="true">
+        <!--<layer-list>
+            <item android:drawable="@drawable/home_button_normal"
+                android:top="@dimen/mediumStrokeWidth"
+                android:left="@dimen/mediumStrokeWidth"
+                android:bottom="@dimen/mediumStrokeWidth"
+                android:right="@dimen/mediumStrokeWidth"/>
+        </layer-list>-->
+
+        <!--<shape android:shape="rectangle">
+            <solid android:color="#712000"/>
+            <corners android:radius="@dimen/homeTileTextHeight"/>
+        </shape>-->
+        <nine-patch android:src="@drawable/orange_button_bg_active"
+            android:dither="true"/>
+
+        <!--<layer-list>
+            <item
+                android:top="@dimen/mediumStrokeWidth">
+                &lt;!&ndash;<shape android:shape="rectangle">
+                    <solid android:color="#712000" />
+                    <corners android:radius="@dimen/homeTileTextHeight" />
+                </shape>&ndash;&gt;
+                <shape android:shape="rectangle">
+                    <gradient android:startColor="#f2752f"
+                        android:centerColor="#b74507"
+                        android:endColor="#b94707"
+                        android:angle="270"/>
+                    <corners android:radius="@dimen/homeTileTextHeight"/>
+                </shape>
+            </item>
+
+        </layer-list>-->
+
+    </item>
+</selector>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <corners android:bottomRightRadius="@dimen/homeTileTextBgCornerRadius"
+        android:bottomLeftRadius="@dimen/homeTileTextBgCornerRadius" />
+
+    <solid android:color="@color/localTextBg"/>
+
+</shape>

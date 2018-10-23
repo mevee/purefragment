@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list  xmlns:android="http://schemas.android.com/apk/res/android">
+<item>
+    <shape
+        android:shape="rectangle">
+
+        <solid android:color="@color/topBarItemBgColor"/>
+        <stroke android:width="@dimen/mediumStrokeWidth"
+            android:color="@color/board2_yellowBlock"/>
+        <corners android:radius="@dimen/playerCardElevation_quickMatch"/>
+
+    </shape>
+</item>
+
+<item android:drawable="@drawable/dice_thunder"
+    android:top="@dimen/gameBoardBottomPadding"
+    android:bottom="@dimen/gameBoardBottomPadding"
+    android:left="@dimen/gameBoardBottomPadding"
+    android:right="@dimen/gameBoardBottomPadding"/>
+</layer-list>

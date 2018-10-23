@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item android:state_pressed="true">
+        <layer-list>
+            <item android:drawable="@drawable/yellow_button"
+                android:top="@dimen/mediumStrokeWidth"
+                android:left="@dimen/mediumStrokeWidth"
+                android:bottom="@dimen/mediumStrokeWidth"
+                android:right="@dimen/mediumStrokeWidth"/>
+        </layer-list>
+    </item>
+    <item android:state_pressed="false"
+        android:drawable="@drawable/yellow_button"/>-->
+
+    <item android:state_pressed="false">
+        <!--<layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <gradient android:startColor="#ffc916"
+                        android:centerColor="#e9aa0f"
+                        android:endColor="#d76f00"
+                        android:angle="270"/>
+                    <corners android:radius="@dimen/homeTileTextHeight"/>
+                </shape>
+            </item>
+        </layer-list>-->
+        <nine-patch android:src="@drawable/yellow_button_normal"
+            android:dither="true"/>
+    </item>
+    <item android:state_pressed="true">
+        <!--<shape android:shape="rectangle">
+            <solid android:color="#d98002"/>
+            <corners android:radius="@dimen/homeTileTextHeight"/>
+        </shape>-->
+        <nine-patch android:src="@drawable/yellow_button_active"
+            android:dither="true"/>
+    </item>
+</selector>

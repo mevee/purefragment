@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/dialogBgOuterStrokeColor" />
+            <!--<corners android:radius="@dimen/inactivePlayerTextSideMargin" />-->
+        </shape>
+    </item>
+
+    <item
+        android:top="@dimen/homeTileTextLeftPadding"
+        android:bottom="@dimen/homeTileTextLeftPadding"
+        android:left="@dimen/homeTileTextLeftPadding"
+        android:right="@dimen/homeTileTextLeftPadding">
+        <shape android:shape="oval">
+            <solid android:color="@color/dialogBgInnerStrokeColor" />
+            <!--<corners android:radius="@dimen/inactivePlayerTextSideMargin" />-->
+        </shape>
+    </item>
+
+    <item
+        android:top="@dimen/newDialogTopMargin"
+        android:bottom="@dimen/newDialogTopMargin"
+        android:left="@dimen/newDialogTopMargin"
+        android:right="@dimen/newDialogTopMargin">
+        <shape android:shape="oval">
+            <solid android:color="#11ffffff" />
+            <!--<corners android:radius="@dimen/inactivePlayerTextSideMargin" />-->
+        </shape>
+    </item>
+    <item
+        android:top="@dimen/newDialogTopMargin"
+        android:bottom="@dimen/newDialogTopMargin"
+        android:left="@dimen/newDialogTopMargin"
+        android:right="@dimen/newDialogTopMargin">
+        <shape android:shape="oval">
+            <solid android:color="@color/newDialogActiveAreaBg" />
+            <stroke
+                android:width="@dimen/smallSizedStroke"
+                android:color="#66000000" />
+            <!--<corners android:radius="@dimen/inactivePlayerTextSideMargin" />-->
+
+        </shape>
+    </item>
+</layer-list>

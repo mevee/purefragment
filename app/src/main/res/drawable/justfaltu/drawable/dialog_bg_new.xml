@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:top="@dimen/newGameDpPadding">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/dialogBgShadowColor"/>
+            <corners android:radius="@dimen/homeTileTextBgCornerRadius"/>
+        </shape>
+    </item>
+
+    <item
+        android:bottom="@dimen/newGameDpPadding">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/dialogBgOuterStrokeColor"/>
+                    <corners android:radius="@dimen/homeTileTextBgCornerRadius"/>
+                </shape>
+            </item>
+            <item
+                android:top="@dimen/newGameDpPadding"
+                android:bottom="@dimen/newGameDpPadding"
+                android:right="@dimen/newGameDpPadding"
+                android:left="@dimen/newGameDpPadding">
+                <shape
+                    android:shape="rectangle">
+                    <solid android:color="@color/newDialogBg"/>
+                    <stroke android:color="@color/dialogBgInnerStrokeColor"
+                        android:width="@dimen/newGameDpPadding" />
+                    <corners android:radius="@dimen/homeTileTextBgCornerRadius"/>
+
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</layer-list>

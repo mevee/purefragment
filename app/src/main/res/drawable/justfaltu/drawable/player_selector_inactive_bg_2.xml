@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="#66630741"/>
+    <stroke android:color="@android:color/transparent"
+        android:width="@dimen/playerInfoCardStrokeWidth_quickMatch"/>
+
+    <corners android:bottomLeftRadius="@dimen/homeTileTextBgCornerRadius"
+        android:bottomRightRadius="@dimen/homeTileTextBgCornerRadius"/>
+</shape>

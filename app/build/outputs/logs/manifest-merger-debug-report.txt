@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:2:1-21:12
+ADDED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:2:1-22:12
 MERGED from [com.google.firebase:firebase-core:11.8.0] /Users/vikesh/.gradle/caches/transforms-1/files-1.1/firebase-core-11.8.0.aar/4d5dbb4e1afd900856fba0a99888043c/AndroidManifest.xml:2:1-6:12
 MERGED from [com.android.support:design:28.0.0] /Users/vikesh/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/7e121b5b20e55a4e316b84e22ab01bc5/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/vikesh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/385242ec4f8cde6ce94764e00fd11bb4/AndroidManifest.xml:17:1-22:12
@@ -63,25 +63,25 @@ MERGED from [com.google.android.gms:play-services-ads-lite-license:11.8.0] /User
 MERGED from [com.google.android.gms:play-services-gass-license:11.8.0] /Users/vikesh/.gradle/caches/transforms-1/files-1.1/play-services-gass-license-11.8.0.aar/4e82ff627b3dacfeac3a0b7e19980ecf/AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /Users/vikesh/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/bef4511715b546f534453e38553d9908/AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-iid-license:11.8.0] /Users/vikesh/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-11.8.0.aar/c4a224f124cfc37ff0162fc444d9702f/AndroidManifest.xml:2:1-6:12
-INJECTED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:2:1-21:12
-INJECTED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:2:1-22:12
 	package
 		ADDED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:3:5-47
 		INJECTED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml
-		ADDED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:2:1-21:12
+		ADDED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:2:1-22:12
 		INJECTED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml
-		ADDED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:2:1-21:12
+		ADDED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:2:1-22:12
 		INJECTED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:5:5-19:19
+ADDED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:5:5-20:19
 MERGED from [com.google.firebase:firebase-core:11.8.0] /Users/vikesh/.gradle/caches/transforms-1/files-1.1/firebase-core-11.8.0.aar/4d5dbb4e1afd900856fba0a99888043c/AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-core:11.8.0] /Users/vikesh/.gradle/caches/transforms-1/files-1.1/firebase-core-11.8.0.aar/4d5dbb4e1afd900856fba0a99888043c/AndroidManifest.xml:5:5-20
 MERGED from [com.android.support:design:28.0.0] /Users/vikesh/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/7e121b5b20e55a4e316b84e22ab01bc5/AndroidManifest.xml:22:5-20
@@ -147,19 +147,21 @@ MERGED from [com.google.firebase:firebase-iid-license:11.8.0] /Users/vikesh/.gra
 	android:theme
 		ADDED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:11:9-40
 activity#com.example.vikesh.purefragments.MainActivity
-ADDED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:12:9-18:20
+ADDED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:12:9-19:20
+	android:screenOrientation
+		ADDED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:13:13-47
 	android:name
 		ADDED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:12:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:13:13-17:29
+ADDED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:14:13-18:29
 action#android.intent.action.MAIN
-ADDED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:14:17-69
+ADDED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:15:17-69
 	android:name
-		ADDED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:14:25-66
+		ADDED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:15:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:16:17-77
+ADDED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:17:17-77
 	android:name
-		ADDED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:16:27-74
+		ADDED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml:17:27-74
 uses-sdk
 INJECTED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/AndroidManifest.xml

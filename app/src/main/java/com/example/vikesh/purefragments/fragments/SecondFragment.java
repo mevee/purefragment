@@ -3,6 +3,7 @@ package com.example.vikesh.purefragments.fragments;
 
 import android.animation.ObjectAnimator;
 import android.annotation.SuppressLint;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -18,10 +19,11 @@ import com.example.vikesh.purefragments.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class SecondFragment extends Fragment {
+public class SecondFragment extends Fragment implements View.OnClickListener {
     private View mView;
     private View boardGame,btnonplay;
-    private View ludoRed,ludoYellow,userred,useryelow;
+    private ImageView ludoRed,ludoYellow,ludoGreen,ludoBlue;
+    private View userred,useryelow;
     private View tokenGreen1,tokenGreen2,tokenGreen3,tokenGreen4;
     private View tokenYellow1,tokenYellow2,tokenYellow3,tokenYellow4;
     private View tokenBlue1,tokenBlue2,tokenBlue3,tokenBlue4;
@@ -43,6 +45,7 @@ public class SecondFragment extends Fragment {
 
             }
         });
+
         btnonplay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -88,29 +91,40 @@ public class SecondFragment extends Fragment {
                            tokenGreen2.setVisibility(View.VISIBLE);
                            tokenGreen3.setVisibility(View.VISIBLE);
                            tokenGreen4.setVisibility(View.VISIBLE);
-                   ludoYellow.setOnClickListener(new View.OnClickListener() {
-                       @Override
-                       public void onClick(View v) {
-                           token =false;
-                           Log.d("clicked","yes"+token);
-//                           Animation animation = AnimationUtils.loadAnimation(getContext(),);
-//                           ObjectAnimator animator = ObjectAnimator.)
-                       }
-                   });
+
+
                }
                 userred.setVisibility(View.VISIBLE);
                 useryelow.setVisibility(View.VISIBLE);
             }
         });
+
+//        ludoYellow.setBackgroundResource(R.drawable.dice_animation);
+//        final AnimationDrawable frameAnimation = (AnimationDrawable) ludoYellow.getBackground();
+
+        ludoBlue.setOnClickListener(this);
+        ludoRed.setOnClickListener(this);
+        ludoGreen.setOnClickListener(this);
+        ludoYellow.setOnClickListener(this);
+        
+//            boolean b;
+//            @Override
+//            public void onClick(View v) {
+//
+//
+//            }
+//        });
         return mView;
     }
 
     private void init() {
+        ludoBlue =mView.findViewById(R.id.ludo_image_view_blue);
+        ludoGreen =mView.findViewById(R.id.ludo_image_view_green);
+        ludoRed =mView.findViewById(R.id.ludo_image_view_red);
+        ludoYellow =mView.findViewById(R.id.ludo_image_view_yellow);
 
-        ludoRed =mView.findViewById(R.id.ludoRed);
-        ludoYellow =mView.findViewById(R.id.ludoYellow);
-        userred = mView.findViewById(R.id.user_red);
-        useryelow = mView.findViewById(R.id.useryellow);
+        userred = mView.findViewById(R.id.user_image_red);
+        useryelow = mView.findViewById(R.id.user_image_yellow);
 
         tokenBlue1 = mView.findViewById(R.id.bytkn1);
         tokenBlue2 = mView.findViewById(R.id.bytkn2);
@@ -138,7 +152,62 @@ public class SecondFragment extends Fragment {
      btnonplay = mView.findViewById(R.id.btnplay);
 
     }
+    boolean b=false;
+    @Override
+    public void onClick(View view){
+        final AnimationDrawable frameAnimation;
 
+        switch (view.getId()){
+            case R.id.ludo_image_view_yellow:
+                ludoYellow.setBackgroundResource(R.drawable.dice_animation);
+                 frameAnimation = (AnimationDrawable) ludoYellow.getBackground();
+                 if(b==false){
+                    frameAnimation.start();
+                    b=true;
+                }else{
+                    frameAnimation.stop();
+                    b=false;
+                }
+                break;
+
+            case R.id.ludo_image_view_red:
+                ludoRed.setBackgroundResource(R.drawable.dice_animation);
+                frameAnimation = (AnimationDrawable) ludoRed.getBackground();
+                if(b==false){
+//                    frameAnimation.start();
+//                    b=true;
+                }else{
+                    frameAnimation.stop();
+//                    b=false;
+                }
+                break;
+
+            case R.id.ludo_image_view_green:
+                ludoGreen.setBackgroundResource(R.drawable.dice_animation);
+                 frameAnimation = (AnimationDrawable) ludoGreen.getBackground();
+                if(b==false){
+//                    frameAnimation.start();
+//                    b=true;
+                }else{
+                    frameAnimation.stop();
+//                    b=false;
+                }
+                break;
+
+            case R.id.ludo_image_view_blue:
+                ludoBlue.setBackgroundResource(R.drawable.dice_animation);
+                 frameAnimation = (AnimationDrawable) ludoBlue.getBackground();
+                if(b==false){
+//                    frameAnimation.start();
+//                    b=true;
+                }else{
+                    frameAnimation.stop();
+//                    b=false;
+                }
+                break;
+
+        }
+    }
     @Override
     public void onStart() {
         super.onStart();
@@ -147,4 +216,5 @@ public class SecondFragment extends Fragment {
         boardGame.startAnimation(zerotoone);
 
     }
+
 }

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+
+            <solid android:color="#301c0e"/>
+            <corners android:bottomLeftRadius="@dimen/homeLevelStarSize"
+                android:radius="@dimen/homeLevelStarSize"/>
+        </shape>
+    </item>
+
+    <item
+        android:bottom="@dimen/newGameBoardPadding">
+        <shape
+            android:shape="rectangle">
+            <solid android:color="#442911" />
+            <corners android:radius="@dimen/homeLevelStarSize" />
+        </shape>
+    </item>
+
+</layer-list>

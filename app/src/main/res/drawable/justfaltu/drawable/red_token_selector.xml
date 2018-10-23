@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    &lt;!&ndash;<item android:drawable="@drawable/red_unselected" android:state_checked="false" />&ndash;&gt;
+
+    &lt;!&ndash;<item android:drawable="@drawable/red_selected" android:state_checked="true" />&ndash;&gt;
+
+    <item android:state_checked="false">
+        <layer-list>
+            <item android:top="@dimen/mediumStrokeWidth"
+                android:bottom="@dimen/mediumStrokeWidth"
+                android:left="@dimen/mediumStrokeWidth"
+                android:right="@dimen/mediumStrokeWidth"
+                android:drawable="@drawable/red_token_selector_bg"/>
+        </layer-list>
+    </item>
+
+    <item android:state_checked="true">
+        <layer-list>
+            <item >
+                <shape android:shape="oval">
+                    <solid android:color="@color/transparent"/>
+                    <stroke android:color="@color/board2_yellowBlock"
+                        android:width="@dimen/smallSizedStroke"/>
+                </shape>
+            </item>
+
+            <item android:top="@dimen/mediumStrokeWidth"
+                android:bottom="@dimen/mediumStrokeWidth"
+                android:left="@dimen/mediumStrokeWidth"
+                android:right="@dimen/mediumStrokeWidth"
+                android:drawable="@drawable/red_token_selector_bg"/>
+        </layer-list>
+    </item>
+</selector>-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="oval">
+        <!--<solid android:color="@color/transparent"/>-->
+        <solid android:color="@color/topBarItemBgColor" />
+
+    </shape>
+    </item>
+    <item
+        android:left="@dimen/mediumStrokeWidth"
+        android:right="@dimen/mediumStrokeWidth"
+        android:top="@dimen/mediumStrokeWidth"
+        android:bottom="@dimen/mediumStrokeWidth">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval">
+            <!--<solid android:color="@color/transparent"/>-->
+            <gradient
+                android:startColor="#fa5162"
+                android:endColor="#da2539"
+                android:angle="90" />
+        </shape>
+    </item>
+
+</layer-list>

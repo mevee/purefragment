@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item android:state_pressed="false"
+        android:drawable="@drawable/facebook_login"/>
+    <item android:state_pressed="true"
+        android:drawable="@drawable/facebook_login_press">
+        &lt;!&ndash;<layer-list>
+            <item android:drawable="@drawable/feedback"
+                android:top="@dimen/mediumStrokeWidth"
+                android:left="@dimen/mediumStrokeWidth"
+                android:bottom="@dimen/mediumStrokeWidth"
+                android:right="@dimen/mediumStrokeWidth"/>
+        </layer-list>&ndash;&gt;
+    </item>-->
+    <item android:state_pressed="false">
+        <!--<layer-list>-->
+            <!--<item>-->
+                <!--<nine-patch android:src="@drawable/facebook_login"-->
+                    <!--android:dither="true"/>-->
+            <!--</item>-->
+        <!--</layer-list>-->
+
+        <layer-list>
+            <item>
+                <!--<shape android:shape="rectangle">
+                    <gradient android:startColor="#009cff"
+                        android:endColor="#0f4ba4"
+                        android:angle="270"/>
+                    <corners android:radius="@dimen/homeTileTextHeight"/>
+                </shape>-->
+                <nine-patch android:src="@drawable/blue_button_bg_normal"
+                    android:dither="true"/>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_pressed="true">
+        <!--<shape android:shape="rectangle">
+            <solid android:color="#0040a0"/>
+            <corners android:radius="@dimen/homeTileTextHeight"/>
+        </shape>-->
+        <!--<layer-list>-->
+            <!--<item>-->
+                <!--<nine-patch android:src="@drawable/facebook_loginactive" android:dither="true" />-->
+            <!--</item>-->
+        <!--</layer-list>-->
+        <nine-patch android:src="@drawable/blue_button_bg_active"
+            android:dither="true"/>
+
+    </item>
+</selector>
