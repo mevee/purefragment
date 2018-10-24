@@ -5,6 +5,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
@@ -71,6 +72,25 @@ public class MainActivity extends AppCompatActivity  {
 
     }
     private void init() {
+        rootView = findViewById(R.id.rootlayout);
+        rootView.setOnTouchListener(new View.OnTouchListener() {
+        boolean b =true;
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+
+                hideSystemUI();
+
+////                if (event.getAction()==event.U)
+//                if(b==true){
+//                    showSystemUI();
+//                    b=false;}
+//                else{
+//                    hideSystemUI();
+//                    b=true;
+//                }
+                return true;
+            }
+        });
 //        btnFragOne = findViewById(R.id.btnfirstfrag);
         getBtnFragTwo = findViewById(R.id.btnsecondfrag);
 //        btnFragThree = findViewById(R.id.btnfourthfrag);

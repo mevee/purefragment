@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.DragableButtonFragment">
+
+    <RelativeLayout
+        android:id="@+id/dragmebtn"
+        android:layout_width="@dimen/width100"
+        android:layout_height="@dimen/width100"
+        android:background="@drawable/emoji_icon">
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/cancelarea"
+        android:layout_width="@dimen/addheig50dp"
+        android:layout_height="@dimen/addheig50dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="@dimen/addheig50dp"
+        android:background="@color/colorBlue"
+        android:visibility="visible"/>
+  </FrameLayout>

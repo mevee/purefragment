@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/tvwelcome"
+        android:layout_width="250dp"
+        android:layout_height="@dimen/width130"
+        android:layout_gravity="center"
+        android:background="@drawable/collect_callout"
+        android:gravity="center"
+        android:text="Welcome"
+        android:textColor="@color/colorBlack"
+        android:textSize="36sp"
+
+        />
+
+</FrameLayout>

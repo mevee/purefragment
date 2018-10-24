@@ -4,6 +4,16 @@
     <dimen name="widthsquare">368dp</dimen>
     <dimen name="squareradious">4dp</dimen>
     <dimen name="widthsignlesquare148">148dp</dimen>
+<!--token size-->
+    <dimen name="tokensize">25dp</dimen>
+    <dimen name="dicesize">50dp</dimen>
+    <dimen name="usersizewidth">50dp</dimen>
+
+    <dimen name="strokelenth">1dp</dimen>
+    <!--token position lenth-->
+    <dimen name="margintoken">64dp</dimen>
+    <dimen name="margintokenfromside">158dp</dimen>
+
     <dimen name="width8">8dp</dimen>
     <dimen name="lenth10">10dp</dimen>
     <dimen name="width15">15dp</dimen>
