@@ -2,6 +2,7 @@
 <resources>
     <dimen name="width">590dp</dimen>
     <dimen name="widthsquare">550dp</dimen>
+    <dimen name="marginfromtop">120dp</dimen>
     <dimen name="squareradious">10dp</dimen>
     <dimen name="widthsignlesquare148">148dp</dimen>
     <dimen name="width8">8dp</dimen>
@@ -17,15 +18,18 @@
     <!--layout dimentionsfor top right diamond and plus button along with geminfo-->
     <dimen name="toplayoutright">110dp</dimen>
     <dimen name="toplayoutrightheight">40dp</dimen>
-    <dimen name="layoutheigt_for_text_and_plus">24.6dp</dimen>
-    <dimen name="toplayout_right_text_size">14sp</dimen>
+    <dimen name="layoutheigt_for_text_and_plus">30.6dp</dimen>
+    <dimen name="toplayout_right_text_size">16sp</dimen>
+    <dimen name="toplayout_right_text_width">86dp</dimen>
+    <dimen name="top_right_layout_margin_left">15dp</dimen>
+    <dimen name="image_view_width">35dp</dimen>
     <!--it will be half of height-->
-    <dimen name="layout_margin_from_left_for_text_and_plus">20.33dp</dimen>
+    <dimen name="layout_margin_from_left_for_text_and_plus">5.33dp</dimen>
 
 
     <!--padding for textview of rigth top view-->
 
-    <dimen name="paddingtop">1.6dp</dimen>
+    <dimen name="paddingtop">3.2dp</dimen>
     <dimen name="paddingbpttom">3.55dp</dimen>
     <dimen name="paddingright">3.55dp</dimen>
     <dimen name="paddingleft">12dp</dimen>
@@ -42,10 +46,10 @@
 
     <!--token position lenth-->
     <dimen name="margintoken">48dp</dimen>
-    <dimen name="margintokenfromside">130dp</dimen>
+    <dimen name="margintokenfromside">120dp</dimen>
 
     <!--emoji and chat layout-->
-    <dimen name="marginfromtopofemojies">10dp</dimen>
+    <dimen name="marginfromtopofemojies">15dp</dimen>
     <dimen name="emojilayoutsize">30dp</dimen>
 
     <!--user layout height and width-->

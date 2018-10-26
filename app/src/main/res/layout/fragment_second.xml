@@ -9,15 +9,15 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="@dimen/margin40dp"
+        android:layout_height="@dimen/toplinearlayoutheight"
         android:layout_gravity="top"
         android:orientation="horizontal"
         android:visibility="visible">
 
         <ImageView
             android:id="@+id/goback"
-            android:layout_width="@dimen/margin40dp"
-            android:layout_height="@dimen/lenth34"
+            android:layout_width="@dimen/backbuttonwidth"
+            android:layout_height="@dimen/backbuttonheight"
             android:background="@drawable/bgforgoback"
             android:src="@drawable/ic_keyboard_arrow_left_black_24dp" />
 
@@ -59,8 +59,8 @@
         </RelativeLayout>
 
         <ImageView
-            android:layout_width="@dimen/lenth36"
-            android:layout_height="@dimen/lenth34"
+            android:layout_width="@dimen/aboutuswidth"
+            android:layout_height="@dimen/aboutusheight"
             android:layout_marginLeft="@dimen/lenth10"
             android:background="@drawable/bgforwingold"
             android:padding="6dp"
@@ -75,7 +75,7 @@
         android:visibility="visible">
 
         <LinearLayout
-            android:layout_width="@dimen/margin86dp"
+            android:layout_width="@dimen/layout_width_for_text_and_plus"
             android:layout_height="@dimen/layoutheigt_for_text_and_plus"
             android:layout_alignParentRight="true"
             android:layout_marginTop="7dp"
@@ -89,7 +89,7 @@
                 android:background="@color/colorBlack"
                 android:text="@string/_1"
                 android:textAlignment="center"
-                android:paddingTop="2dp"
+                android:paddingTop="@dimen/paddingtop"
                 android:paddingLeft="8dp"
                 android:layout_marginLeft="@dimen/layout_margin_from_left_for_text_and_plus"
                 android:textColor="@color/colorWhite"
@@ -319,7 +319,8 @@
                 android:layout_alignStart="@+id/ytkn1"
                 android:layout_alignTop="@+id/ytkn2"
                 android:src="@drawable/yellow_token"
-                android:visibility="visible" />
+                android:visibility="visible"
+                android:layout_alignLeft="@+id/ytkn1" />
 
             <ImageView
                 android:id="@+id/ytkn4"

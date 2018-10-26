@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <dimen name="width">660dp</dimen>
-    <dimen name="squareradious">10.76dp</dimen>
+    <dimen name="width">650dp</dimen>
+    <dimen name="squareradious">12.76dp</dimen>
     <dimen name="widthsignlesquare148">148dp</dimen>
-
+    <dimen name="marginfromtop">72dp</dimen>
     <!--top three layout-->
     <dimen name="toplinearlayoutheight">50.0dp</dimen>
     <dimen name="backbuttonwidth">60.84dp</dimen>
@@ -13,16 +13,19 @@
     <dimen name="aboutusheight">45.96dp</dimen>
 
     <!--layout dimentionsfor top right diamond and plus button along with geminfo-->
-    <dimen name="toplayoutright">150.6dp</dimen>
-    <dimen name="toplayoutrightheight">56.2dp</dimen>
+    <dimen name="toplayoutright">140.6dp</dimen>
+    <dimen name="toplayoutrightheight">50.2dp</dimen>
     <dimen name="layoutheigt_for_text_and_plus">40.86dp</dimen>
-    <dimen name="toplayout_right_text_size">20sp</dimen>
-    <!--it will be half of height-->
-    <dimen name="layout_margin_from_left_for_text_and_plus">28.33dp</dimen>
+    <dimen name="toplayout_right_text_size">18sp</dimen>
 
+    <dimen name="toplayout_right_text_width">106dp</dimen>
+    <dimen name="top_right_layout_margin_left">19dp</dimen>
+    <dimen name="image_view_width">40dp</dimen>
+    <!--it will be half of height-->
+    <dimen name="layout_margin_from_left_for_text_and_plus">8.33dp</dimen>
 
     <!--padding for textview of rigth top view-->
-    <dimen name="paddingtop">7.88dp</dimen>
+    <dimen name="paddingtop">6.88dp</dimen>
     <dimen name="paddingbpttom">6.88dp</dimen>
     <dimen name="paddingright">6.88dp</dimen>
     <dimen name="paddingleft">15.52dp</dimen>
@@ -30,7 +33,7 @@
     <dimen name="margin10">19.4dp</dimen>
 
     <!--token size-->
-    <dimen name="tokensize">55.2dp</dimen>
+    <dimen name="tokensize">52.2dp</dimen>
     <dimen name="dicesize">65dp</dimen>
     <dimen name="usersizewidth">65dp</dimen>
     <dimen name="userlayoutsizeheight">90dp</dimen>
@@ -41,11 +44,11 @@
     <dimen name="strokelenth">3.88dp</dimen>
 
     <!--token position lenth-->
-    <dimen name="margintoken">62.96dp</dimen>
-    <dimen name="margintokenfromside">150.2dp</dimen>
+    <dimen name="margintoken">58.96dp</dimen>
+    <dimen name="margintokenfromside">146.2dp</dimen>
 
     <!--emoji and chat layout-->
-    <dimen name="marginfromtopofemojies">7.76dp</dimen>
+    <dimen name="marginfromtopofemojies">10.76dp</dimen>
     <dimen name="emojilayoutsize">34.47dp</dimen>
 
     <!--user layout height and width-->

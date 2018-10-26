@@ -77,45 +77,44 @@
 
         <LinearLayout
             android:id="@+id/l1"
-            android:layout_width="120dp"
-            android:layout_height="@dimen/margin50dp"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="12dp"
-            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layoutheigt_for_text_and_plus"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/top_right_layout_margin_left"
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="@dimen/width100"
-                android:layout_height="match_parent"
+                android:layout_width="@dimen/toplayout_right_text_width"
+                android:layout_height="fill_parent"
                 android:layout_centerHorizontal="true"
-                android:layout_weight="3"
+                android:layout_marginLeft="@dimen/layout_margin_from_left_for_text_and_plus"
+                android:layout_weight="2"
                 android:background="@color/colorBlack"
+                android:fontFamily="@font/asap_bold"
+                android:paddingLeft="@dimen/paddingleft"
+                android:paddingTop="@dimen/paddingtop"
                 android:text="@string/_1"
                 android:textAlignment="center"
-                android:paddingTop="5dp"
-                android:layout_marginLeft="@dimen/layout_margin_from_left_for_text_and_plus"
                 android:textColor="@color/colorWhite"
-                android:fontFamily="@font/asap_bold"
-                android:textSize="@dimen/toplayout_right_text_size"/>
+                android:textSize="@dimen/toplayout_right_text_size" />
 
             <ImageView
                 android:id="@+id/i2"
-                android:layout_width="12dp"
+                android:layout_width="@dimen/image_view_width"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/gold_left"
-                android:src="@drawable/add_icon"
                 android:padding="5dp"
-                />
+                android:src="@drawable/add_icon" />
         </LinearLayout>
 
         <ImageView
-            android:id="@+id/i"
             android:layout_width="@dimen/toplayoutrightheight"
-            android:layout_height="match_parent"
+            android:layout_height="@dimen/toplayoutrightheight"
             android:layout_alignParentLeft="true"
-            android:src="@drawable/gem"
-             />
+            android:src="@drawable/gem" />
+
     </RelativeLayout>
 
 <!--core layout-->
@@ -123,7 +122,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center">
+        android:layout_gravity="center|top"
+        android:layout_marginTop="@dimen/marginfromtop">
 
 <!--user green-->
         <RelativeLayout
@@ -557,7 +557,7 @@
             android:layout_height="@dimen/lenth30"
             android:layout_below="@+id/user_layout_red"
             android:layout_marginLeft="@dimen/lenth10"
-            android:layout_marginTop="2dp"
+            android:layout_marginTop="4dp"
             android:orientation="horizontal">
 
             <RelativeLayout

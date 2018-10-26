@@ -15,8 +15,10 @@
     <!--layout dimentionsfor top right diamond and plus button along with geminfo-->
     <dimen name="toplayoutright">100dp</dimen>
     <dimen name="toplayoutrightheight">34dp</dimen>
-    <dimen name="layoutheigt_for_text_and_plus">86dp</dimen>
+    <dimen name="layout_width_for_text_and_plus">86dp</dimen>
     <dimen name="toplayout_right_text_size">10sp</dimen>
+    <dimen name="layoutheigt_for_text_and_plus">30dp</dimen>
+
     <!--it will be half of height-->
     <dimen name="layout_margin_from_left_for_text_and_plus">17.33dp</dimen>
 
@@ -28,8 +30,6 @@
     <dimen name="paddingleft">8dp</dimen>
 
     <dimen name="margin10">10dp</dimen>
-
-
 
     <!--token size-->
     <dimen name="tokensize">30dp</dimen>
