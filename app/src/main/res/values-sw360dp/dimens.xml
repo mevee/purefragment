@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="width">360dp</dimen>
+    <dimen name="squareradious">4dp</dimen>
+    <dimen name="widthsignlesquare148">148dp</dimen>
+
+    <!--top three layout-->
+    <dimen name="toplinearlayoutheight">40dp</dimen>
+    <dimen name="backbuttonwidth">36dp</dimen>
+    <dimen name="backbuttonheight">34dp</dimen>
+    <dimen name="aboutuswidth">36dp</dimen>
+    <dimen name="aboutusheight">34dp</dimen>
+
+    <!--layout dimentionsfor top right diamond and plus button along with geminfo-->
+    <dimen name="toplayoutright">90dp</dimen>
+    <dimen name="toplayoutrightheight">30dp</dimen>
+    <dimen name="layoutheigt_for_text_and_plus">21.86dp</dimen>
+    <dimen name="toplayout_right_text_size">12sp</dimen>
+    <!--it will be half of height-->
+    <dimen name="layout_margin_from_left_for_text_and_plus">15.33dp</dimen>
+
+
+    <!--padding for textview of rigth top view-->
+    <dimen name="paddingtop">2dp</dimen>
+    <dimen name="paddingbpttom">3.55dp</dimen>
+    <dimen name="paddingright">3.55dp</dimen>
+    <dimen name="paddingleft">8dp</dimen>
+
+    <dimen name="margin10">10dp</dimen>
+
+    <!--token size-->
+    <dimen name="tokensize">30dp</dimen>
+    <dimen name="dicesize">50dp</dimen>
+    <dimen name="usersizewidth">50dp</dimen>
+    <dimen name="userlayoutsizeheight">68dp</dimen>
+
+    <!--margin for red and yellow  user of top center board-->
+    <dimen name="topmarginforredandyellowusers">70dp</dimen>
+
+    <!-- width color lining otside the ludo and user image -->
+    <dimen name="strokelenth">2dp</dimen>
+
+    <!--token position lenth-->
+    <dimen name="margintoken">34dp</dimen>
+    <dimen name="margintokenfromside">80dp</dimen>
+
+
+    <!--emoji and chat layout-->
+    <dimen name="marginfromtopofemojies">4dp</dimen>
+    <dimen name="emojilayoutsize">17.77dp</dimen>
+
+    <!--user layout height and width-->
+    <dimen name="margintoptextuseryellow">6dp</dimen>
+    <dimen name="marginfrombottomouserimagegreen">4dp</dimen>
+    <dimen name="textsizeusername">11sp</dimen>
+
+    <dimen name="margintopgift">36.34dp</dimen>
+    <dimen name="gifticonsize">19dp</dimen>
+
+    <!--diamond and retry layout-->
+    <dimen name="diamondreloadwidth">30dp</dimen>
+    <dimen name="diamondreloadwidthmarginleft">10dp</dimen>
+    <dimen name="reload_bottom_text_size">12sp</dimen>
+
+    <dimen name="width8">8dp</dimen>
+    <dimen name="lenth10">10dp</dimen>
+    <dimen name="width15">15dp</dimen>
+    <dimen name="width16">16dp</dimen>
+    <dimen name="width18">18dp</dimen>
+    <dimen name="lenth20">20dp</dimen>
+    <dimen name="width24">21.86dp</dimen>
+    <dimen name="lenth26">26dp</dimen>
+    <dimen name="lenth30">23.66dp</dimen>
+    <dimen name="width2dp">2dp</dimen>
+    <dimen name="lenth34">34dp</dimen>
+    <dimen name="lenth36">36dp</dimen>
+    <dimen name="width74">74dp</dimen>
+    <dimen name="width100">100dp</dimen>
+    <dimen name="width110">110dp</dimen>
+    <dimen name="width115">115dp</dimen>
+    <dimen name="width130">130dp</dimen>
+    <dimen name="strokewidth1dp">1dp</dimen>
+    <dimen name="addheight">28dp</dimen>
+    <dimen name="userimagesize">40dp</dimen>
+    <dimen name="userimageandnamelayoutwidth">55dp</dimen>
+    <dimen name="margin60dp">60dp</dimen>
+    <dimen name="margin65dp">65dp</dimen>
+    <dimen name="margin67dp">67dp</dimen>
+    <dimen name="margin40dp">40dp</dimen>
+    <dimen name="margin50dp">50dp</dimen>
+    <dimen name="margin52dp">52dp</dimen>
+    <dimen name="margin45dp">45dp</dimen>
+    <dimen name="margin72dp">72dp</dimen>
+    <dimen name="margin82dp">82dp</dimen>
+    <dimen name="margin86dp">86dp</dimen>
+
+    <dimen name="lenth120dp">120dp</dimen>
+    <dimen name="lenth125dp">125dp</dimen>
+
+    <dimen name="margin70dp">70dp</dimen>
+    <dimen name="padding6dp">6dp</dimen>
+    <dimen name="margin15dp">15dp</dimen>
+    <dimen name="radious25">25dp</dimen>
+    <dimen name="l55dp">55dp</dimen>
+    <dimen name="addwide320dp">55dp</dimen>
+    <dimen name="addheig50dp">55dp</dimen>
+    <dimen name="radiousCurve">10dp</dimen>
+    <dimen name="addHeight">32dp</dimen>
+
+</resources>

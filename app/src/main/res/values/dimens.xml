@@ -1,18 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="width">350dp</dimen>
-    <dimen name="widthsquare">368dp</dimen>
+
+    <dimen name="width">360dp</dimen>
     <dimen name="squareradious">4dp</dimen>
     <dimen name="widthsignlesquare148">148dp</dimen>
-<!--token size-->
-    <dimen name="tokensize">25dp</dimen>
+
+    <!--top three layout-->
+    <dimen name="toplinearlayoutheight">40dp</dimen>
+    <dimen name="backbuttonwidth">34dp</dimen>
+    <dimen name="backbuttonheight">30dp</dimen>
+    <dimen name="aboutuswidth">34dp</dimen>
+    <dimen name="aboutusheight">30dp</dimen>
+
+    <!--layout dimentionsfor top right diamond and plus button along with geminfo-->
+    <dimen name="toplayoutright">100dp</dimen>
+    <dimen name="toplayoutrightheight">34dp</dimen>
+    <dimen name="layoutheigt_for_text_and_plus">86dp</dimen>
+    <dimen name="toplayout_right_text_size">10sp</dimen>
+    <!--it will be half of height-->
+    <dimen name="layout_margin_from_left_for_text_and_plus">17.33dp</dimen>
+
+
+    <!--padding for textview of rigth top view-->
+    <dimen name="paddingtop">2dp</dimen>
+    <dimen name="paddingbpttom">3.55dp</dimen>
+    <dimen name="paddingright">3.55dp</dimen>
+    <dimen name="paddingleft">8dp</dimen>
+
+    <dimen name="margin10">10dp</dimen>
+
+
+
+    <!--token size-->
+    <dimen name="tokensize">30dp</dimen>
     <dimen name="dicesize">50dp</dimen>
     <dimen name="usersizewidth">50dp</dimen>
+    <dimen name="userlayoutsizeheight">65dp</dimen>
 
-    <dimen name="strokelenth">1dp</dimen>
+    <dimen name="topmarginforredandyellowusers">66dp</dimen>
+
+    <!-- width color lining otside the ludo and user image -->
+    <dimen name="strokelenth">2dp</dimen>
+
     <!--token position lenth-->
-    <dimen name="margintoken">64dp</dimen>
-    <dimen name="margintokenfromside">158dp</dimen>
+    <dimen name="margintoken">34dp</dimen>
+    <dimen name="margintokenfromside">80dp</dimen>
+
+    <!--emoji and chat layout-->
+    <dimen name="marginfromtopofemojies">4dp</dimen>
+    <dimen name="marginfrombottomouserimagegreen">4dp</dimen>
+
+
+    <dimen name="textsizeusername">12sp</dimen>
+    <dimen name="margintopgift">39.34dp</dimen>
+    <dimen name="gifticonsize">19dp</dimen>
+
+    <!--diamond and retry layout-->
+    <dimen name="diamondreloadwidth">30dp</dimen>
+    <dimen name="diamondreloadwidthmarginleft">10dp</dimen>
+    <dimen name="reload_bottom_text_size">16sp</dimen>
 
     <dimen name="width8">8dp</dimen>
     <dimen name="lenth10">10dp</dimen>
@@ -22,7 +68,9 @@
     <dimen name="lenth20">20dp</dimen>
     <dimen name="width24">24.6dp</dimen>
     <dimen name="lenth26">26dp</dimen>
+
     <dimen name="lenth30">30dp</dimen>
+
     <dimen name="width2dp">2dp</dimen>
     <dimen name="lenth34">34dp</dimen>
     <dimen name="lenth36">36dp</dimen>
@@ -37,7 +85,7 @@
     <dimen name="userimageandnamelayoutwidth">55dp</dimen>
     <dimen name="margin60dp">60dp</dimen>
     <dimen name="margin65dp">65dp</dimen>
-    <dimen name="margin67dp">67dp</dimen>
+    <dimen name="margin67dp">64dp</dimen>
     <dimen name="margin40dp">40dp</dimen>
     <dimen name="margin50dp">50dp</dimen>
     <dimen name="margin52dp">52dp</dimen>
