@@ -50,7 +50,6 @@
     <dimen name="marginfromtopofemojies">4dp</dimen>
     <dimen name="marginfrombottomouserimagegreen">4dp</dimen>
 
-
     <dimen name="textsizeusername">12sp</dimen>
     <dimen name="margintopgift">39.34dp</dimen>
     <dimen name="gifticonsize">19dp</dimen>
@@ -59,6 +58,11 @@
     <dimen name="diamondreloadwidth">30dp</dimen>
     <dimen name="diamondreloadwidthmarginleft">10dp</dimen>
     <dimen name="reload_bottom_text_size">16sp</dimen>
+
+
+    <dimen name="fingerwidth">30dp</dimen>
+    <dimen name="fingerheight">38dp</dimen>
+    <dimen name="finger_marginfor_leftright">80dp</dimen>
 
     <dimen name="width8">8dp</dimen>
     <dimen name="lenth10">10dp</dimen>

@@ -63,6 +63,10 @@
     <dimen name="diamondreloadwidthmarginleft">10dp</dimen>
     <dimen name="reload_bottom_text_size">12sp</dimen>
 
+    <dimen name="fingerwidth">30dp</dimen>
+    <dimen name="fingerheight">38dp</dimen>
+    <dimen name="finger_marginfor_leftright">80dp</dimen>
+
     <dimen name="width8">8dp</dimen>
     <dimen name="lenth10">10dp</dimen>
     <dimen name="width15">15dp</dimen>

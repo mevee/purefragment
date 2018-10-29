@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/framelayout_second"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/home_bg"
     tools:context=".fragments.ThirdFragment">
 
     <LinearLayout
+        android:id="@+id/topleftlayout"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/toplinearlayoutheight"
         android:layout_gravity="top"
@@ -40,25 +42,26 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginRight="@dimen/lenth10"
                 android:layout_marginTop="@dimen/width2dp"
+                android:fontFamily="@font/asap_bold"
                 android:text="@string/win"
                 android:textColor="@color/colorYellow"
-                android:textSize="9sp"
-                android:fontFamily="@font/asap_bold"/>
+                android:textSize="9sp" />
 
             <TextView
                 android:layout_width="@dimen/width15"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentRight="true"
-                android:layout_marginBottom="4dp"
+                android:layout_marginBottom="6dp"
                 android:layout_marginRight="10dp"
+                android:fontFamily="@font/asap_bold"
                 android:text="@string/_2k"
                 android:textColor="@color/colorWhite"
-                android:textSize="@dimen/lenth10"
-                android:fontFamily="@font/asap_bold"/>
+                android:textSize="@dimen/lenth10" />
         </RelativeLayout>
 
         <ImageView
+            android:id="@+id/info"
             android:layout_width="@dimen/aboutuswidth"
             android:layout_height="@dimen/aboutusheight"
             android:layout_marginLeft="@dimen/lenth10"
@@ -68,6 +71,7 @@
     </LinearLayout>
 
     <RelativeLayout
+        android:id="@+id/topRight"
         android:layout_width="@dimen/toplayoutright"
         android:layout_height="@dimen/toplayoutrightheight"
         android:layout_gravity="right|top"
@@ -85,15 +89,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/layout_margin_from_left_for_text_and_plus"
                 android:layout_weight="3"
                 android:background="@color/colorBlack"
+                android:fontFamily="@font/asap_bold"
+                android:paddingLeft="8dp"
+                android:paddingTop="@dimen/paddingtop"
                 android:text="@string/_1"
                 android:textAlignment="center"
-                android:paddingTop="@dimen/paddingtop"
-                android:paddingLeft="8dp"
-                android:layout_marginLeft="@dimen/layout_margin_from_left_for_text_and_plus"
-                android:textColor="@color/colorWhite"
-                android:fontFamily="@font/asap_bold"/>
+                android:textColor="@color/colorWhite" />
 
             <ImageView
                 android:id="@+id/i2"
@@ -101,9 +105,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/gold_left"
-                android:src="@drawable/add_icon"
                 android:padding="5dp"
-                />
+                android:src="@drawable/add_icon" />
         </LinearLayout>
 
         <ImageView
@@ -114,20 +117,20 @@
             android:src="@drawable/gem" />
     </RelativeLayout>
 
-<!--coore layout-->
+    <!--coore layout-->
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center">
 
-<!--user green-->
+        <!--user green-->
         <RelativeLayout
             android:id="@+id/user_layout_green"
             android:layout_width="@dimen/usersizewidth"
             android:layout_height="@dimen/margin65dp"
-            android:layout_marginLeft="@dimen/lenth10"
             android:layout_marginBottom="5dp"
+            android:layout_marginLeft="@dimen/lenth10"
             android:visibility="visible">
 
             <de.hdodenhof.circleimageview.CircleImageView
@@ -135,8 +138,8 @@
                 android:layout_width="@dimen/usersizewidth"
                 android:layout_height="@dimen/usersizewidth"
                 android:background="@drawable/green_stroke_circle"
-                android:src="@drawable/robot_3"
-                android:padding="@dimen/width2dp"/>
+                android:padding="@dimen/width2dp"
+                android:src="@drawable/robot_3" />
 
             <TextView
                 android:id="@+id/user_name_green"
@@ -145,15 +148,22 @@
                 android:layout_alignParentBottom="true"
                 android:layout_below="@+id/user_image_green"
                 android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/varelaround_regular"
                 android:gravity="left"
                 android:maxLines="1"
-                android:ellipsize="end"
                 android:singleLine="true"
                 android:text="@string/username"
                 android:textColor="@color/colorWhite"
-                android:textSize="10sp"
-                android:fontFamily="@font/varelaround_regular"/>
+                android:textSize="@dimen/textsizeusername" />
         </RelativeLayout>
+        <ImageView
+            android:id="@+id/giftyellow"
+            android:layout_width="@dimen/lenth20"
+            android:layout_height="@dimen/lenth20"
+            android:layout_toRightOf="@+id/user_layout_green"
+            android:layout_below="@+id/ludo_layout_green"
+            android:src="@drawable/gift_icon" />
 
         <!-- ludo green -->
         <RelativeLayout
@@ -172,7 +182,8 @@
                 android:background="@drawable/dice_1" />
         </RelativeLayout>
 
-<!--yello user-->
+        <!--yello user-->
+
         <RelativeLayout
             android:id="@+id/user_layout_yellow"
             android:layout_width="@dimen/usersizewidth"
@@ -186,8 +197,8 @@
                 android:layout_width="@dimen/usersizewidth"
                 android:layout_height="@dimen/usersizewidth"
                 android:background="@drawable/yellow_stroke_circle"
-                android:src="@drawable/robot_2"
-                android:padding="2dp"/>
+                android:padding="2dp"
+                android:src="@drawable/robot_2" />
 
             <TextView
                 android:id="@+id/user_name_yellow"
@@ -195,19 +206,19 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_below="@+id/user_image_yellow"
-                android:layout_marginTop="6dp"
                 android:layout_marginLeft="@dimen/strokewidth1dp"
-                android:maxLines="1"
+                android:layout_marginTop="6dp"
                 android:ellipsize="end"
+                android:fontFamily="@font/varelaround_regular"
                 android:gravity="left"
+                android:maxLines="1"
                 android:singleLine="true"
                 android:text="@string/username"
                 android:textColor="@color/colorWhite"
-                android:textSize="@dimen/textsizeusername"
-                android:fontFamily="@font/varelaround_regular"/>
+                android:textSize="@dimen/textsizeusername" />
         </RelativeLayout>
 
-<!--yello ludo-->
+        <!--yello ludo-->
         <RelativeLayout
             android:id="@+id/ludo_layout_yellow"
             android:layout_width="@dimen/dicesize"
@@ -229,17 +240,17 @@
             android:id="@+id/gift"
             android:layout_width="@dimen/lenth20"
             android:layout_height="@dimen/lenth20"
-            android:layout_toLeftOf="@+id/user_layout_yellow"
             android:layout_marginTop="@dimen/margin52dp"
+            android:layout_toLeftOf="@+id/user_layout_yellow"
             android:src="@drawable/gift_icon" />
 
-<!--center board area-->
+        <!--center board area-->
         <RelativeLayout
             android:id="@+id/gameboard"
             android:layout_width="@dimen/width"
             android:layout_height="@dimen/width"
-            android:layout_gravity="center"
             android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
             android:layout_marginTop="@dimen/margin72dp"
             android:background="@drawable/bgforludoboard"
             android:padding="@dimen/width2dp"
@@ -316,11 +327,11 @@
                 android:id="@+id/ytkn3"
                 android:layout_width="@dimen/tokensize"
                 android:layout_height="@dimen/tokensize"
+                android:layout_alignLeft="@+id/ytkn1"
                 android:layout_alignStart="@+id/ytkn1"
                 android:layout_alignTop="@+id/ytkn2"
                 android:src="@drawable/yellow_token"
-                android:visibility="visible"
-                android:layout_alignLeft="@+id/ytkn1" />
+                android:visibility="visible" />
 
             <ImageView
                 android:id="@+id/ytkn4"
@@ -415,13 +426,13 @@
                 android:visibility="visible" />
         </RelativeLayout>
 
-<!--user red-->
+        <!--user red-->
         <RelativeLayout
             android:id="@+id/user_layout_red"
             android:layout_width="@dimen/usersizewidth"
             android:layout_height="@dimen/margin50dp"
-            android:layout_marginLeft="@dimen/lenth10"
             android:layout_below="@+id/gameboard"
+            android:layout_marginLeft="@dimen/lenth10"
             android:layout_marginTop="5dp"
             android:visibility="visible">
 
@@ -430,8 +441,8 @@
                 android:layout_width="@dimen/usersizewidth"
                 android:layout_height="@dimen/usersizewidth"
                 android:background="@drawable/red_stroke_circle"
-                android:src="@drawable/robot_3"
-                android:padding="@dimen/width2dp"/>
+                android:padding="@dimen/width2dp"
+                android:src="@drawable/robot_3" />
 
         </RelativeLayout>
         <!--ludo red-->
@@ -452,13 +463,13 @@
                 android:layout_margin="1dp"
                 android:background="@drawable/dice_1" />
         </RelativeLayout>
-   <!--reload, diamonds again-->
+        <!--reload, diamonds again-->
         <RelativeLayout
             android:layout_width="@dimen/lenth30"
             android:layout_height="@dimen/dicesize"
+            android:layout_below="@+id/gameboard"
             android:layout_marginLeft="@dimen/lenth125dp"
-            android:layout_marginTop="5dp"
-            android:layout_below="@+id/gameboard">
+            android:layout_marginTop="5dp">
 
             <ImageView
                 android:layout_width="@dimen/width24"
@@ -473,8 +484,8 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="@dimen/width2dp"
                 android:layout_marginLeft="@dimen/width2dp"
-                android:src="@drawable/gem"
-                android:padding="@dimen/strokewidth1dp"/>
+                android:padding="@dimen/strokewidth1dp"
+                android:src="@drawable/gem" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -482,19 +493,18 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="@dimen/width2dp"
                 android:layout_toRightOf="@id/iv1"
+                android:fontFamily="@font/asap_bold"
                 android:text="@string/_2"
                 android:textColor="@color/colorWhite"
-                android:textSize="@dimen/reload_bottom_text_size"
-                android:fontFamily="@font/asap_bold"
-               />
+                android:textSize="@dimen/reload_bottom_text_size" />
         </RelativeLayout>
         <!--blue user -->
         <RelativeLayout
             android:id="@+id/user_layout_blue"
             android:layout_width="@dimen/usersizewidth"
             android:layout_height="@dimen/margin70dp"
-            android:layout_below="@+id/gameboard"
             android:layout_alignParentRight="true"
+            android:layout_below="@+id/gameboard"
             android:layout_marginRight="@dimen/lenth10"
             android:layout_marginTop="5dp"
             android:visibility="visible">
@@ -504,8 +514,8 @@
                 android:layout_width="@dimen/usersizewidth"
                 android:layout_height="@dimen/usersizewidth"
                 android:background="@drawable/blue_stroke_circle"
-                android:src="@drawable/robot_1"
-                android:padding="@dimen/width2dp"/>
+                android:padding="@dimen/width2dp"
+                android:src="@drawable/robot_1" />
 
             <TextView
                 android:id="@+id/user_nrame_blue"
@@ -513,37 +523,45 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/user_image_blue"
                 android:layout_marginTop="2dp"
-                android:scrollHorizontally="true"
-                android:maxLines="1"
                 android:ellipsize="end"
+                android:fontFamily="@font/varelaround_regular"
                 android:gravity="center"
+                android:maxLines="1"
+                android:scrollHorizontally="true"
                 android:text="@string/username"
                 android:textColor="@color/colorWhite"
                 android:textSize="10sp"
-                android:visibility="visible"
-                android:fontFamily="@font/varelaround_regular"/>
+                android:visibility="visible" />
         </RelativeLayout>
-
-    <!--blue ludo-->
+        <ImageView
+            android:id="@+id/giftblue"
+            android:layout_width="@dimen/lenth20"
+            android:layout_height="@dimen/lenth20"
+            android:layout_marginTop="@dimen/margin52dp"
+            android:layout_toLeftOf="@+id/user_layout_blue"
+            android:layout_below="@+id/gameboard"
+            android:src="@drawable/gift_icon" />
+        <!--blue ludo-->
         <RelativeLayout
             android:id="@+id/ludo_layout_blue"
             android:layout_width="@dimen/dicesize"
             android:layout_height="@dimen/dicesize"
-            android:layout_below="@+id/gameboard"
             android:layout_alignParentRight="true"
+            android:layout_below="@+id/gameboard"
+            android:layout_marginRight="@dimen/margin67dp"
             android:layout_marginTop="5dp"
             android:background="@drawable/bluedice_bg"
-            android:layout_marginRight="@dimen/margin67dp"
             android:visibility="visible">
+
             <ImageView
                 android:id="@+id/ludo_image_view_blue"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/dice_1"
-                android:padding="@dimen/width2dp"/>
+                android:padding="@dimen/width2dp" />
         </RelativeLayout>
 
-<!--emoji and chat layout-->
+        <!--emoji and chat layout-->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="@dimen/lenth20"
@@ -570,13 +588,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_toRightOf="@id/iv"
+                    android:fontFamily="@font/varelaround_regular"
                     android:gravity="center"
                     android:paddingRight="10dp"
                     android:text="@string/emoji"
                     android:textColor="@color/colorWhite"
-                    android:textSize="10sp"
-                    android:fontFamily="@font/varelaround_regular"
-                    />
+                    android:textSize="10sp" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -597,15 +614,211 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_toRightOf="@id/ivicon"
+                    android:fontFamily="@font/varelaround_regular"
                     android:gravity="center"
+                    android:padding="1dp"
                     android:text="@string/chat"
                     android:textColor="@color/colorWhite"
-                    android:textSize="10sp"
-                    android:padding="1dp"
-                    android:fontFamily="@font/varelaround_regular"/>
+                    android:textSize="10sp" />
             </RelativeLayout>
 
         </LinearLayout>
+
+        <ImageView
+            android:id="@+id/hand_red"
+            android:layout_width="@dimen/fingerwidth"
+            android:layout_height="@dimen/fingerheight"
+            android:layout_above="@+id/ludo_layout_red"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="80dp"
+            android:src="@drawable/finger_pointer" />
+
+        <ImageView
+            android:id="@+id/hand_blue"
+            android:layout_width="@dimen/fingerwidth"
+            android:layout_height="@dimen/fingerheight"
+            android:layout_above="@+id/ludo_layout_blue"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="@dimen/finger_marginfor_leftright"
+            android:src="@drawable/finger_pointer" />
+
+        <ImageView
+            android:id="@+id/hand_green"
+            android:layout_width="@dimen/fingerwidth"
+            android:layout_height="@dimen/fingerheight"
+            android:layout_below="@+id/ludo_layout_green"
+            android:layout_marginLeft="@dimen/finger_marginfor_leftright"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/finger_pointer_upwards" />
+
+        <ImageView
+            android:id="@+id/hand_yellow"
+            android:layout_width="@dimen/fingerwidth"
+            android:layout_height="@dimen/fingerheight"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ludo_layout_yellow"
+            android:layout_marginRight="@dimen/finger_marginfor_leftright"
+            android:layout_marginTop="23dp"
+            android:src="@drawable/finger_pointer_upwards" />
+        <!--auto play button -->
+       <LinearLayout
+           android:layout_width="56dp"
+           android:layout_height="22dp"
+           android:layout_marginLeft="@dimen/width8"
+           android:layout_above="@+id/user_layout_red"
+           android:background="@drawable/autoplay_bg"
+           android:orientation="horizontal">
+           <TextView
+               android:id="@+id/autoplaybutton"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_above="@+id/user_layout_red"
+               android:text="AUTOPLAY"
+               android:gravity="center"
+               android:textSize="6sp"
+               android:textColor="@color/colorBlack"
+               android:src="@drawable/finger_pointer"
+               android:layout_weight=".1"/>
+           <CheckBox
+               android:layout_width="7dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:layout_margin="2dp"
+               android:layout_gravity="center"
+               android:paddingRight="2dp"/>
+       </LinearLayout>
+
+<!--four Left-->
+        <TextView
+            android:layout_width="@dimen/usersizewidth"
+            android:layout_height="@dimen/usersizewidth"
+            android:layout_below="@+id/gameboard"
+            android:layout_marginRight="@dimen/lenth10"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="@dimen/margin10"
+            android:text="LEFT"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/varelaround_regular"
+            android:visibility="gone"
+            />
+        <TextView
+            android:layout_width="@dimen/usersizewidth"
+            android:layout_height="@dimen/usersizewidth"
+            android:layout_below="@+id/gameboard"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/lenth10"
+            android:layout_marginTop="5dp"
+            android:text="LEFT"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/varelaround_regular"
+            android:visibility="gone"
+            />
+        <TextView
+            android:layout_width="@dimen/usersizewidth"
+            android:layout_height="@dimen/usersizewidth"
+            android:layout_marginLeft="@dimen/margin10"
+            android:text="LEFT"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/varelaround_regular"
+            android:visibility="gone"
+            />
+        <TextView
+            android:layout_width="@dimen/usersizewidth"
+            android:layout_height="@dimen/usersizewidth"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin10"
+            android:text="LEFT"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/varelaround_regular"
+            android:visibility="gone"
+            />
+
+        <!--    timer set visible but nothing is set yet djksk-->
+        <ImageView
+            android:layout_width="@dimen/usersizewidth"
+            android:layout_height="@dimen/usersizewidth"
+            android:layout_below="@+id/gameboard"
+            android:layout_marginRight="@dimen/lenth10"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="@dimen/margin10"
+            android:gravity="center"
+            android:visibility="visible"
+            />
+        <ImageView
+            android:layout_width="@dimen/usersizewidth"
+            android:layout_height="@dimen/usersizewidth"
+            android:layout_below="@+id/gameboard"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/lenth10"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:visibility="visible"
+            />
+        <ImageView
+            android:layout_width="@dimen/usersizewidth"
+            android:layout_height="@dimen/usersizewidth"
+            android:layout_marginLeft="@dimen/margin10"
+            android:gravity="center"
+            android:visibility="visible"
+            />
+        <ImageView
+            android:layout_width="@dimen/usersizewidth"
+            android:layout_height="@dimen/usersizewidth"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin10"
+            android:gravity="center"
+            android:visibility="visible"
+            />
+
+        <!-- trophy -->
+        <ImageView
+            android:layout_width="@dimen/usersizewidth"
+            android:layout_height="@dimen/usersizewidth"
+            android:layout_below="@+id/gameboard"
+            android:layout_marginRight="@dimen/lenth10"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="@dimen/margin10"
+            android:gravity="center"
+            android:src="@drawable/trophy"
+            android:visibility="gone"
+            />
+        <ImageView
+            android:layout_width="@dimen/usersizewidth"
+            android:layout_height="@dimen/usersizewidth"
+            android:layout_below="@+id/gameboard"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/lenth10"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:src="@drawable/trophy"
+            android:visibility="gone"
+            />
+        <ImageView
+            android:layout_width="@dimen/usersizewidth"
+            android:layout_height="@dimen/usersizewidth"
+            android:layout_marginLeft="@dimen/margin10"
+            android:gravity="center"
+            android:src="@drawable/trophy"
+            android:visibility="gone"
+            />
+        <ImageView
+            android:layout_width="@dimen/usersizewidth"
+            android:layout_height="@dimen/usersizewidth"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin10"
+            android:gravity="center"
+            android:src="@drawable/trophy"
+            android:visibility="gone"
+            />
 
     </RelativeLayout>
 
@@ -617,7 +830,8 @@
         android:layout_marginBottom="@dimen/width24"
         android:layout_marginRight="@dimen/widthsignlesquare148"
         android:text="Play"
-        android:visibility="gone"/>
+        android:visibility="gone" />
+
     <com.google.android.gms.ads.AdView
         xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:id="@+id/adView"

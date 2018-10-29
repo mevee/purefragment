@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 
 import com.example.vikesh.purefragments.R;
@@ -23,7 +24,8 @@ import com.google.android.gms.ads.AdView;
  * A simple {@link Fragment} subclass.
  */
 public class SecondFragment extends Fragment implements View.OnClickListener {
-    private View mView;
+    private int viewCount;
+    private View mView,rootView;
     private View boardGame,btnonplay;
     private ImageView ludoRed,ludoYellow,ludoGreen,ludoBlue;
     private View userred,useryelow;
@@ -42,6 +44,13 @@ public class SecondFragment extends Fragment implements View.OnClickListener {
         // Inflate the layout for this fragment
         mView = inflater.inflate(R.layout.fragment_second, container, false);
         init();
+
+        ViewGroup viewGroup = (ViewGroup) mView;
+
+        int count2 = getChildrenViews(viewGroup);
+        Log.d("viewCount:",""+count2);
+
+
         ludoRed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,7 +69,6 @@ public class SecondFragment extends Fragment implements View.OnClickListener {
                        public void onClick(View v) {
                            token=true;
                            Log.d("clicked","yes"+token);
-
 //                           tokenBlue1.setVisibility(View.VISIBLE);
 //                           tokenBlue2.setVisibility(View.VISIBLE);
 //                           tokenBlue3.setVisibility(View.VISIBLE);
@@ -89,12 +97,10 @@ public class SecondFragment extends Fragment implements View.OnClickListener {
                            tokenBlue2.setVisibility(View.VISIBLE);
                            tokenBlue3.setVisibility(View.VISIBLE);
                            tokenBlue4.setVisibility(View.VISIBLE);
-
                            tokenGreen1.setVisibility(View.VISIBLE);
                            tokenGreen2.setVisibility(View.VISIBLE);
                            tokenGreen3.setVisibility(View.VISIBLE);
                            tokenGreen4.setVisibility(View.VISIBLE);
-
 
                }
                 userred.setVisibility(View.VISIBLE);
@@ -121,6 +127,7 @@ public class SecondFragment extends Fragment implements View.OnClickListener {
     }
 
     private void init() {
+
         AdView adView = new AdView(getActivity());
         adView.setAdSize(AdSize.BANNER);
         adView.setAdUnitId("ca-app-pub-3940256099942544/6300978111");
@@ -129,6 +136,7 @@ public class SecondFragment extends Fragment implements View.OnClickListener {
         mAdView.loadAd(adRequest);
 
 // TODO: Add adView to your view hierarchy.
+        rootView = mView.findViewById(R.id.framelayout_second);
         ludoBlue =mView.findViewById(R.id.ludo_image_view_blue);
         ludoGreen =mView.findViewById(R.id.ludo_image_view_green);
         ludoRed =mView.findViewById(R.id.ludo_image_view_red);
@@ -226,6 +234,31 @@ public class SecondFragment extends Fragment implements View.OnClickListener {
         Animation zerotoone = AnimationUtils.loadAnimation(getContext(),R.anim.scale0to1);
         boardGame.startAnimation(zerotoone);
 
+    }
+
+    public int getChildrenViews(ViewGroup parent){
+        int count = parent.getChildCount();
+        for (int i=0;i<parent.getChildCount();i++){
+            if (parent.getChildAt(i) instanceof ViewGroup){
+                count+= getChildrenViews((ViewGroup) parent.getChildAt(i));
+            }
+        }
+        return count;
+    }
+
+    private int countChild(View view) {
+        if (!(view instanceof ViewGroup))
+            return 1;
+
+        int counter = 0;
+
+        ViewGroup viewGroup = (ViewGroup) view;
+
+        for (int i=0; i<viewGroup.getChildCount(); i++) {
+            counter += countChild(viewGroup.getChildAt(i));
+        }
+
+        return counter;
     }
 
 }
