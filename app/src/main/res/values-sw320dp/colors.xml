@@ -10,7 +10,8 @@
     <color name="colorAddindicator">#d0713d60</color>
     <color name="colorRed">#9f0505</color>
     <color name="colorRedLight">#f20808</color>
-    <color name="colorBlue">#122ade</color><color name="colorYellow">#d7a620</color>
+    <color name="colorBlue">#122ade</color>
+    <color name="colorYellow">#d7a620</color>
     <color name="colorGreen">#377404</color>
 
 </resources>

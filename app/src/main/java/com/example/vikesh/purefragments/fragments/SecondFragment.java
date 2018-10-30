@@ -3,6 +3,7 @@ package com.example.vikesh.purefragments.fragments;
 
 import android.animation.ObjectAnimator;
 import android.annotation.SuppressLint;
+import android.app.Dialog;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -26,7 +27,7 @@ import com.google.android.gms.ads.AdView;
 public class SecondFragment extends Fragment implements View.OnClickListener {
     private int viewCount;
     private View mView,rootView;
-    private View boardGame,btnonplay;
+    private View boardGame,btnonplay,btnGoBack;
     private ImageView ludoRed,ludoYellow,ludoGreen,ludoBlue;
     private View userred,useryelow;
     private View tokenGreen1,tokenGreen2,tokenGreen3,tokenGreen4;
@@ -54,6 +55,14 @@ public class SecondFragment extends Fragment implements View.OnClickListener {
         ludoRed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+            }
+        });
+
+        btnGoBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Dialog mdialog =new Dialog(getActivity());
 
             }
         });
@@ -136,12 +145,15 @@ public class SecondFragment extends Fragment implements View.OnClickListener {
         mAdView.loadAd(adRequest);
 
 // TODO: Add adView to your view hierarchy.
+        View v = mView.findViewById(R.id.left_red);
+        v.setAlpha(.7f);
         rootView = mView.findViewById(R.id.framelayout_second);
         ludoBlue =mView.findViewById(R.id.ludo_image_view_blue);
         ludoGreen =mView.findViewById(R.id.ludo_image_view_green);
         ludoRed =mView.findViewById(R.id.ludo_image_view_red);
         ludoYellow =mView.findViewById(R.id.ludo_image_view_yellow);
 
+        btnGoBack = mView.findViewById(R.id.goback);
         userred = mView.findViewById(R.id.user_image_red);
         useryelow = mView.findViewById(R.id.user_image_yellow);
 
@@ -178,13 +190,19 @@ public class SecondFragment extends Fragment implements View.OnClickListener {
 
         switch (view.getId()){
             case R.id.ludo_image_view_yellow:
+
                 ludoYellow.setBackgroundResource(R.drawable.dice_animation);
+                ludoYellow.setScaleX(1.4f);
+                ludoYellow.setScaleY(1.4f);
                  frameAnimation = (AnimationDrawable) ludoYellow.getBackground();
                  if(b==false){
                     frameAnimation.start();
+
                     b=true;
                 }else{
                     frameAnimation.stop();
+                     ludoYellow.setScaleX(1);
+                     ludoYellow.setScaleY(1);
                     b=false;
                 }
                 break;

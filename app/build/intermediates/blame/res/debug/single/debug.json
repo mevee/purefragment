@@ -852,6 +852,10 @@
         "source": "/Users/vikesh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/385242ec4f8cde6ce94764e00fd11bb4/res/color-v21/abc_btn_colored_borderless_text_material.xml"
     },
     {
+        "merged": "/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/res/merged/debug/drawable_bg_of_dialog.xml.flat",
+        "source": "/Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/res/drawable/bg_of_dialog.xml"
+    },
+    {
         "merged": "/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/res/merged/debug/drawable_abc_ic_clear_material.xml.flat",
         "source": "/Users/vikesh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/385242ec4f8cde6ce94764e00fd11bb4/res/drawable/abc_ic_clear_material.xml"
     },
@@ -1018,6 +1022,10 @@
     {
         "merged": "/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/res/merged/debug/color-v23_abc_tint_btn_checkable.xml.flat",
         "source": "/Users/vikesh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/385242ec4f8cde6ce94764e00fd11bb4/res/color-v23/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/res/merged/debug/drawable_left_bg.xml.flat",
+        "source": "/Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/res/drawable/left_bg.xml"
     },
     {
         "merged": "/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_black_16dp.png.flat",
@@ -2390,6 +2398,10 @@
     {
         "merged": "/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/res/merged/debug/anim_abc_slide_in_bottom.xml.flat",
         "source": "/Users/vikesh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/385242ec4f8cde6ce94764e00fd11bb4/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/res/merged/debug/layout_dialogs_layout.xml.flat",
+        "source": "/Users/vikesh/AndroidStudioProjects/PureFragments/app/src/main/res/layout/dialogs_layout.xml"
     },
     {
         "merged": "/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",

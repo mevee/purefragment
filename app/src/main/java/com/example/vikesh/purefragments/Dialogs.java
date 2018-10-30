@@ -8,10 +8,12 @@ import android.support.v4.app.DialogFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
 
 public class Dialogs extends DialogFragment {
     int mNum;
-
+    private int
     static Dialogs newInstance(int num) {
         Dialogs f = new Dialogs();
 
@@ -52,21 +54,30 @@ public class Dialogs extends DialogFragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return super.onCreateView(inflater, container, savedInstanceState);
-//        View v = inflater.inflate(R.layout.fragment_dialog, container, false);
-//        View tv = v.findViewById(R.id.text);
-//        ((TextView)tv).setText("Dialog #" + mNum + ": using style "
+//        return super.onCreateView(inflater, container, savedInstanceState);
+        View view = inflater.inflate(R.layout.dialogs_layout, container, false);
+
+        TextView tvContent,tvCancel ,tv= view.findViewById(R.id.text);
+        tvContent = view.findViewById(R.id.content_of_dialog);
+        tvCancel = view.findViewById(R.id.tvcancel);
+         tvCancel.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 getDialog().dismiss();
+             }
+         });
+        ((TextView)tv).setText("Dialog #" + mNum + ": using style ");
 //                + getNameForNum(mNum));
-//
-//        // Watch for button clicks.
+
+        // Watch for button clicks.
 //        Button button = (Button)v.findViewById(R.id.show);
-//        button.setOnClickListener(new OnClickListener() {
+//        button.setOnClickListener(new View.OnClickListener() {
 //            public void onClick(View v) {
 //                // When button is clicked, call up to owning activity.
-//                ((FragmentDialog)getActivity()).showDialog();
+//                ((Dialogs)getActivity()).showDialog();
 //            }
 //        });
-//
-//        return v;
+
+        return view;
     }
 }
