@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_gravity="bottom"
+    android:background="@drawable/bg_of_dialog"
+    >
+<TextView
+    android:layout_width="60dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_text_title_view_bg"
+    android:text="GIFTS"
+    android:textColor="@color/colorGreyWhite"
+    android:gravity="center"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="4dp"
+    android:padding="4dp"
+    android:fontFamily="@font/raleway_bold"/>
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorAccent"/>
+    <TextView
+        android:id="@+id/selectall"
+        android:layout_toLeftOf="@id/checkall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="16dp"
+        android:text="send to all"
+        android:fontFamily="@font/asap_bold"/>
+    <CheckBox
+        android:id="@+id/checkall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_below="@+id/checkall">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/allgifts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </ScrollView>
+
+
+</RelativeLayout>

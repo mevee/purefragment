@@ -37,7 +37,7 @@
     <dimen name="usersizewidth">50dp</dimen>
     <dimen name="userlayoutsizeheight">65dp</dimen>
 
-    <dimen name="topmarginforredandyellowusers">66dp</dimen>
+    <dimen name="topmarginforredandyellowusers">70dp</dimen>
 
     <!-- width color lining otside the ludo and user image -->
     <dimen name="strokelenth">2dp</dimen>

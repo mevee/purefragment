@@ -6,7 +6,7 @@
     density="xhdpi"
     format="10"
     plugin-version="3.1.3"
-    timestamp="1540900201829"
+    timestamp="1540994553757"
     token="2291031171750994409"
     verifier="COLD_SWAP_REQUESTED" >
 
@@ -29,52 +29,55 @@
 
     <build
         build-mode="FULL"
-        timestamp="1540892602916"
+        timestamp="1540983857367"
         verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
         <artifact
             location="/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
             type="SPLIT_MAIN" />
         <artifact
-            location="/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-            type="SPLIT" />
-        <artifact
             location="/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
             location="/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
-        <artifact
-            location="/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
-            type="SPLIT" />
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="R_CLASS_CHANGE"
-        timestamp="1540893995224"
+        ir-eligibility="CLASS_ADDED"
+        timestamp="1540993819011"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
             location="/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
@@ -83,22 +86,16 @@
             location="/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            location="/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
             location="/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="R_CLASS_CHANGE"
-        timestamp="1540895850932"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-            type="SPLIT" />
         <artifact
             location="/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
             location="/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
@@ -106,16 +103,7 @@
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1540899011319"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-            type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1540900201829"
+        timestamp="1540994553757"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/instant-run-apk/debug/app-debug.apk"

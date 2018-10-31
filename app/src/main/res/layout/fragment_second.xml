@@ -236,7 +236,7 @@
             android:layout_height="@dimen/width"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
-            android:layout_marginTop="@dimen/margin72dp"
+            android:layout_marginTop="@dimen/topmarginforredandyellowusers"
             android:background="@drawable/bgforludoboard"
             android:padding="@dimen/width2dp"
             android:visibility="visible">

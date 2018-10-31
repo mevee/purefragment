@@ -5,23 +5,26 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.DialogFragment;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Dialogs extends DialogFragment {
     int mNum;
-    private int
-    static Dialogs newInstance(int num) {
+    private TextView tvOk,tvCancel,tvtitle,tvcontent;
+
+    public static Dialogs newInstance(int num) {
         Dialogs f = new Dialogs();
 
         // Supply num input as an argument.
         Bundle args = new Bundle();
         args.putInt("num", num);
         f.setArguments(args);
-
         return f;
     }
 
@@ -49,6 +52,7 @@ public class Dialogs extends DialogFragment {
             case 7: theme = android.R.style.Theme_Holo_Light_Panel; break;
             case 8: theme = android.R.style.Theme_Holo_Light; break;
         }
+        setStyle(style, theme);
     }
 
     @Nullable
@@ -56,28 +60,28 @@ public class Dialogs extends DialogFragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 //        return super.onCreateView(inflater, container, savedInstanceState);
         View view = inflater.inflate(R.layout.dialogs_layout, container, false);
+          tvtitle = view.findViewById(R.id.tv_dialog_title);
+          tvcontent = view.findViewById(R.id.content_of_dialog);
+          tvCancel = view.findViewById(R.id.tvcancel);
+          tvOk = view.findViewById(R.id.tv_ok);
 
-        TextView tvContent,tvCancel ,tv= view.findViewById(R.id.text);
-        tvContent = view.findViewById(R.id.content_of_dialog);
-        tvCancel = view.findViewById(R.id.tvcancel);
-         tvCancel.setOnClickListener(new View.OnClickListener() {
-             @Override
-             public void onClick(View v) {
-                 getDialog().dismiss();
-             }
-         });
-        ((TextView)tv).setText("Dialog #" + mNum + ": using style ");
-//                + getNameForNum(mNum));
+          tvOk.setOnClickListener(new View.OnClickListener() {
+              @Override
+              public void onClick(View v) {
+                  Toast.makeText(getContext(), "YouClicked ok", Toast.LENGTH_SHORT).show();
+                  getDialog().dismiss();
+              }
+          });
 
-        // Watch for button clicks.
-//        Button button = (Button)v.findViewById(R.id.show);
-//        button.setOnClickListener(new View.OnClickListener() {
-//            public void onClick(View v) {
-//                // When button is clicked, call up to owning activity.
-//                ((Dialogs)getActivity()).showDialog();
-//            }
-//        });
+          tvCancel.setOnClickListener(new View.OnClickListener() {
+              @Override
+              public void onClick(View v) {
+                  getDialog().dismiss();
+              }
+          });
 
         return view;
     }
+
+
 }
