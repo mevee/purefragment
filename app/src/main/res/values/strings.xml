@@ -7,8 +7,35 @@
     <string name="secondfragment">Hello second fragment</string>
     <string name="thirdfragment">Hello third fragment</string>
     <string name="fourtfragment">Hello fourth fragment</string>
+    <string name="exitdialogcontent">You would lose the 500coins if
+        you leave the
+    game? Exit the game anyway?</string>
+    <string name="joinus">Join the Facebook commubity of Ludo Super
+        Star to be the first to know about interesting upcomming features!
+    </string>
+
+    <string name="askenablechat">Do you want to enable chat for this game?</string>
+
+    <string name="mode">Mode:</string>
+       <string name="noofplayer">No.of Players:</string>
+    <string name="autoplayer">AutoPlayer:</string>
+    <string name="voicechat">Voice Chat:</string>
+
+    <string name="coindisttibution">Coin Distribution</string>
+
+    <string name="rank1">1st Rank:</string>
+    <string name="rank2">2nd Rank:</string>
+    <string name="rank3">3rd Rank:</string>
+    <string name="rank1coin"> 1250</string>
+    <string name="rank2coin"> 500</string>
+    <string name="rank3coin"> 250</string>
+
+    <string name="dummy">111</string>
+
     <string name="_2k">2k</string>
     <string name="win">WIN</string>
+    <string name="no">NO</string>
+    <string name="yes">YES</string>
     <string name="_1">1</string>
     <string name="username">Usernameisverry good</string>
     <string name="emoji">Emoji</string>

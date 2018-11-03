@@ -29,8 +29,8 @@
         android:layout_marginLeft="5dp"
         android:fontFamily="@font/varelaround_regular"
         android:textColor="@color/colorWhite"
-        android:text="User dioewid"
-        android:textSize="10dp"/>
+        android:text="User xyz"
+        android:textSize="12dp"/>
 
     <TextView
         android:id="@+id/userfrom"
@@ -42,7 +42,7 @@
         android:layout_marginLeft="5dp"
         android:fontFamily="@font/varelaround_regular"
         android:textColor="@color/colorGreyWhite"
-        android:text="User "
+        android:text="User"
         android:gravity="center"
         android:textSize="10dp"/>
     <ImageView
@@ -64,7 +64,7 @@
         android:layout_height="22dp"
         android:text="3"
         android:gravity="center"
-
+        android:fontFamily="@font/varelaround_regular"
         android:textColor="@color/colorWhite"/>
     <ImageView
         android:id="@+id/edituser"

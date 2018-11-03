@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/rgn"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="40dp"
+        android:src="@drawable/bottem_notch_dialog_bg" />
+    <RelativeLayout
+        android:id="@+id/rg1"
+        android:layout_below="@+id/rgn"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/dialog_bg_new"
+        >
+
+        <RelativeLayout
+            android:id="@+id/lrg2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:background="@drawable/bg_lightblue">
+
+            <TextView
+                android:id="@+id/tvvoicechat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/asap_bold"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/coindisttibution"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvmode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvvoicechat"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/asap_bold"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/rank1"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp" />
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_toRightOf="@+id/tvmode_def"
+                android:layout_below="@+id/tvvoicechat"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/vault_coin"
+                android:layout_marginLeft="2dp"
+                />
+
+            <TextView
+                android:id="@+id/tvmode_def"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvvoicechat"
+                android:layout_toRightOf="@+id/tvmode"
+                android:fontFamily="@font/asap_bold"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/rank1coin"
+                android:textColor="@color/colorYellow"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvnoofplayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvmode"
+                android:fontFamily="@font/asap_bold"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="@string/rank2"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvnoofplayer_def"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvmode_def"
+                android:layout_toRightOf="@+id/tvnoofplayer"
+                android:fontFamily="@font/asap_bold"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/rank2coin"
+                android:textColor="@color/colorYellow"
+                android:textSize="14sp" />
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_toRightOf="@+id/tvnoofplayer_def"
+                android:layout_below="@+id/tvmode_def"
+                android:src="@drawable/vault_coin"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="2dp"
+                />
+
+            <TextView
+                android:id="@+id/tvautoplayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvnoofplayer"
+                android:fontFamily="@font/asap_bold"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/rank3"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvautoplayer_def"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvnoofplayer"
+                android:layout_toRightOf="@+id/tvautoplayer"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/asap_bold"
+                android:gravity="center"
+                android:text="@string/rank3coin"
+                android:textColor="@color/colorYellow"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_toRightOf="@+id/tvautoplayer_def"
+                android:layout_below="@+id/tvnoofplayer"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/vault_coin"
+                android:layout_marginLeft="2dp"
+                />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -9,35 +9,51 @@ import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.telecom.GatewayInfo;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
 import com.example.vikesh.purefragments.Dialogs;
+import com.example.vikesh.purefragments.EmojiDialog;
 import com.example.vikesh.purefragments.R;
+import com.example.vikesh.purefragments.bridge.ViewObservable;
+import com.example.vikesh.purefragments.dialogs.ChatMessageDialog;
+import com.example.vikesh.purefragments.dialogs.CoinDistribution;
+import com.example.vikesh.purefragments.dialogs.GameInfo;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+
+import java.util.Observable;
+import java.util.Observer;
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class SecondFragment extends Fragment implements View.OnClickListener {
     private int viewCount,mStackLevel;
-    private View mView, rootView;
+    private View mView, rootView,chat,emoji,gameinfo,coindistribution;
+    private Window window;
     private View boardGame, btnonplay, btnGoBack;
     private ImageView ludoRed, ludoYellow, ludoGreen, ludoBlue;
-    private View userred, useryelow;
+    private View userred, useryelow,usergreen,userblue;
     private View tokenGreen1, tokenGreen2, tokenGreen3, tokenGreen4;
     private View tokenYellow1, tokenYellow2, tokenYellow3, tokenYellow4;
     private View tokenBlue1, tokenBlue2, tokenBlue3, tokenBlue4;
     private View tokenRed1, tokenRed2, tokenRed3, tokenRed4;
     private View gifts1,gifts2,gifts3;
+    private ViewObservable source;
+    private Observer obeserve;
 
     private boolean token;
     private AdView mAdView;
@@ -52,6 +68,13 @@ public class SecondFragment extends Fragment implements View.OnClickListener {
         // Inflate the layout for this fragment
         mView = inflater.inflate(R.layout.fragment_second, container, false);
         init();
+        obeserve =new Observer() {
+            @Override
+            public void update(Observable o, Object arg) {
+
+            }
+        };
+         window = getActivity().getWindow();
 
         ViewGroup viewGroup = (ViewGroup) mView;
 
@@ -64,8 +87,30 @@ public class SecondFragment extends Fragment implements View.OnClickListener {
              userInfoDialog();
             }
         });
-
-
+        emoji.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showEmojiDialog();
+            }
+        });
+        chat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showAskForChatEanbleDialog();
+            }
+        });
+        gameinfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showGameInfoDialog();
+            }
+        });
+        coindistribution.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showCoindistributiondialog();
+            }
+        });
         btnGoBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -169,9 +214,14 @@ public class SecondFragment extends Fragment implements View.OnClickListener {
 // TODO: Add adView to your view hierarchy.
         View v = mView.findViewById(R.id.left_red);
         v.setAlpha(.7f);
-
+        chat =mView.findViewById(R.id.chat_layout);
+        emoji = mView.findViewById(R.id.emoji_layout);
         gifts1 = mView.findViewById(R.id.giftyellow);
         gifts2 = mView.findViewById(R.id.giftblue);
+
+        gameinfo = mView.findViewById(R.id.info);
+
+        coindistribution = mView.findViewById(R.id.coindistribution);
 
         rootView = mView.findViewById(R.id.framelayout_second);
         ludoBlue = mView.findViewById(R.id.ludo_image_view_blue);
@@ -225,7 +275,6 @@ public class SecondFragment extends Fragment implements View.OnClickListener {
                 frameAnimation = (AnimationDrawable) ludoYellow.getBackground();
                 if (b == false) {
                     frameAnimation.start();
-
                     b = true;
                 } else {
                     frameAnimation.stop();
@@ -293,21 +342,6 @@ public class SecondFragment extends Fragment implements View.OnClickListener {
         return count;
     }
 
-    private int countChild(View view) {
-        if (!(view instanceof ViewGroup))
-            return 1;
-
-        int counter = 0;
-
-        ViewGroup viewGroup = (ViewGroup) view;
-
-        for (int i = 0; i < viewGroup.getChildCount(); i++) {
-            counter += countChild(viewGroup.getChildAt(i));
-        }
-
-        return counter;
-    }
-
     private void showDialog() {
         mStackLevel++;
 //
@@ -333,7 +367,7 @@ public class SecondFragment extends Fragment implements View.OnClickListener {
 //        // in a transaction.  We also want to remove any currently showing
 //        // dialog, so make our own transaction and take care of that here.
         FragmentTransaction ft = getFragmentManager().beginTransaction();
-        Fragment prev = getFragmentManager().findFragmentByTag("dialog");
+        Fragment prev = getFragmentManager().findFragmentByTag("dialoginfo");
         if (prev != null) {
             ft.remove(prev);
         }
@@ -341,7 +375,7 @@ public class SecondFragment extends Fragment implements View.OnClickListener {
 
         // Create and show the dialog.
         DialogFragment newFragment = UserInfoDalog.newInstance(mStackLevel);
-        newFragment.show(ft, "dialog");
+        newFragment.show(ft, "dialoginfo");
     }
 
     private void showGiftsDialog() {
@@ -351,13 +385,86 @@ public class SecondFragment extends Fragment implements View.OnClickListener {
 //        // in a transaction.  We also want to remove any currently showing
 //        // dialog, so make our own transaction and take care of that here.
         FragmentTransaction ft = getFragmentManager().beginTransaction();
-        Fragment prev = getFragmentManager().findFragmentByTag("dialog");
+        Fragment prev = getFragmentManager().findFragmentByTag("dialoggift");
         if (prev != null) {
             ft.remove(prev);
         }
         ft.addToBackStack(null);
         // Create and show the dialog.
-        DialogFragment newFragment = GiftsDialog.newInstance(mStackLevel);
-        newFragment.show(ft, "dialog");
+        DialogFragment newFragment = com.example.vikesh.purefragments.fragments.GiftsDialog.newInstance(mStackLevel);
+        newFragment.show(ft, "dialoggift");
     }
+
+    private void showAskForChatEanbleDialog() {
+        mStackLevel++;
+
+        FragmentTransaction ft = getFragmentManager().beginTransaction();
+        Fragment prev = getFragmentManager().findFragmentByTag("chatenable");
+        if (prev != null) {
+            ft.remove(prev);
+        }
+        ft.addToBackStack(null);
+        // Create and show the dialog.
+        DialogFragment newFragment = com.example.vikesh.purefragments.fragments.AskForChatEnableDialog.newInstance(mStackLevel,userred);
+        newFragment.show(ft, "chatenable");
+    }
+
+    private void showEmojiDialog() {
+        mStackLevel++;
+
+        FragmentTransaction ft = getFragmentManager().beginTransaction();
+        Fragment prev = getFragmentManager().findFragmentByTag("emoji");
+        if (prev != null) {
+            ft.remove(prev);
+        }
+        ft.addToBackStack(null);
+        // Create and show the dialog.
+        DialogFragment newFragment = EmojiDialog.newInstance(mStackLevel,userred);
+        newFragment.show(ft, "emoji");
+    }
+
+    private void showGameInfoDialog() {
+        mStackLevel++;
+//
+//        ViewObservable source = new ViewObservable();
+//        source.setSource(gameinfo);
+
+
+    FragmentTransaction ft = getFragmentManager().beginTransaction();
+        Fragment prev = getFragmentManager().findFragmentByTag("emoji");
+        if (prev != null) {
+            ft.remove(prev);
+        }
+        ft.addToBackStack(null);
+        // Create and show the dialog.
+        DialogFragment newFragment = GameInfo.newInstance(mStackLevel,gameinfo);
+        newFragment.show(ft, "emoji");
+    }
+    private void showCoindistributiondialog() {
+        mStackLevel++;
+
+        FragmentTransaction ft = getFragmentManager().beginTransaction();
+        Fragment prev = getFragmentManager().findFragmentByTag("emoji");
+        if (prev != null) {
+            ft.remove(prev);
+        }
+        ft.addToBackStack(null);
+        // Create and show the dialog.
+        DialogFragment newFragment = CoinDistribution.newInstance(mStackLevel,coindistribution);
+        newFragment.show(ft, "emoji");
+    }
+
+    private void showMessageDialog() {
+        mStackLevel++;
+        FragmentTransaction ft = getFragmentManager().beginTransaction();
+        Fragment prev = getFragmentManager().findFragmentByTag("message");
+        if (prev != null) {
+            ft.remove(prev);
+        }
+        ft.addToBackStack(null);
+        // Create and show the dialog.
+        DialogFragment newFragment = ChatMessageDialog.newInstance(mStackLevel,"hellow friends");
+        newFragment.show(ft, "message");
+    }
+
 }

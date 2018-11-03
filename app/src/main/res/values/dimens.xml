@@ -60,9 +60,20 @@
     <dimen name="reload_bottom_text_size">16sp</dimen>
 
 
+
     <dimen name="fingerwidth">30dp</dimen>
     <dimen name="fingerheight">38dp</dimen>
     <dimen name="finger_marginfor_leftright">80dp</dimen>
+<!---->
+    <dimen name="gameinfodialogwidth">30dp</dimen>
+    <dimen name="gameinfodialogheight">38dp</dimen>
+    <dimen name="gameinfodialogmarginfromtop">80dp</dimen>
+
+    <dimen name="info_dialogofsetx">80dp</dimen>
+    <dimen name="golddis_dialogofsetx">80dp</dimen>
+    <dimen name="golddis_dialogofsety">150dp</dimen>
+    <dimen name="chat_dialog_ofsetx">60dp</dimen>
+    <dimen name="chat_dialog_ofsety">160dp</dimen>
 
     <dimen name="width8">8dp</dimen>
     <dimen name="lenth10">10dp</dimen>
@@ -110,5 +121,9 @@
     <dimen name="addheig50dp">55dp</dimen>
     <dimen name="radiousCurve">10dp</dimen>
     <dimen name="addHeight">32dp</dimen>
+
+    <dimen name="marker_corner_radius">4dp</dimen>
+    <dimen name="marker_height">40dp</dimen>
+    <dimen name="marker_width">32dp</dimen>
 
 </resources>

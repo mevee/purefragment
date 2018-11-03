@@ -66,6 +66,15 @@
     <dimen name="fingerheight">33.77dp</dimen>
     <dimen name="finger_marginfor_leftright">71.11dp</dimen>
 
+    <dimen name="info_dialogofsetx">25dp</dimen>
+    <dimen name="golddis_dialogofsetx">50dp</dimen>
+    <dimen name="golddis_dialogofsety">80dp</dimen>
+    <dimen name="chat_dialog_ofsetx">5dp</dimen>
+    <dimen name="chat_dialog_ofsety">130dp</dimen>
+    <dimen name="emoji_dialog_ofsetx">5dp</dimen>
+    <dimen name="emoji_dialog_ofsety">160dp</dimen>
+
+
     <dimen name="width8">8dp</dimen>
     <dimen name="lenth10">10dp</dimen>
     <dimen name="width15">15dp</dimen>

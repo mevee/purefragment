@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainl"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    >
+    <RelativeLayout
+        android:id="@+id/rr1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bg_new"
+        >
+    <RelativeLayout
+        android:id="@+id/lr2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="4dp"
+        android:background="@drawable/bg_lightblue"
+        >
+    <TextView
+        android:id="@+id/tvaskquestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/askenablechat"
+        android:fontFamily="@font/varelaround_regular"
+        android:textSize="14sp"
+        android:textColor="@color/colorWhite"
+        />
+
+    <Button
+        android:id="@+id/bt_yes_chat"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvaskquestion"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/yes" />
+
+    <Button
+        android:id="@+id/bt_no_chat"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvaskquestion"
+        android:layout_toRightOf="@+id/bt_yes_chat"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/no" />
+    </RelativeLayout>
+
+</RelativeLayout>
+
+    <ImageView
+        android:layout_below="@+id/rr1"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:rotation="180"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/bottem_notch_dialog_bg"/>
+
+</RelativeLayout>

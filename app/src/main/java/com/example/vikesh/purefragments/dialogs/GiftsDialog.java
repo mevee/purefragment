@@ -26,6 +26,7 @@ public class GiftsDialog extends DialogFragment {
 
        View view = inflater.inflate(R.layout.gifts,container,false);
 
+
         return view;
     }
 
@@ -34,5 +35,9 @@ public class GiftsDialog extends DialogFragment {
         super.onViewCreated(view, savedInstanceState);
     }
 
-
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        getFragmentManager().popBackStack();
+    }
 }

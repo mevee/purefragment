@@ -12,10 +12,14 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 
+import com.example.vikesh.purefragments.bridge.ViewObservable;
 import com.example.vikesh.purefragments.fragments.DragableButtonFragment;
 import com.example.vikesh.purefragments.fragments.FirstFragment;
 import com.example.vikesh.purefragments.fragments.SecondFragment;
 import com.example.vikesh.purefragments.fragments.ThirdFragment;
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
 
 public class MainActivity extends AppCompatActivity  {
     private View rootView;
@@ -28,6 +32,7 @@ public class MainActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         init();
+        EventBus.getDefault().register(this);
 
 //        btnFragOne.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -71,6 +76,10 @@ public class MainActivity extends AppCompatActivity  {
         ft.commit();
 
     }
+    @Subscribe
+    public void onEvent(ViewObservable view){
+
+    }
     private void init() {
         rootView = findViewById(R.id.rootlayout);
         rootView.setOnTouchListener(new View.OnTouchListener() {
@@ -103,7 +112,7 @@ public class MainActivity extends AppCompatActivity  {
     @Override
     protected void onStart() {
         int count = getSupportFragmentManager().getBackStackEntryCount();
-        if(count<1)
+        if(count==0)
         super.onStart();
         else
             getSupportFragmentManager().popBackStack();
@@ -123,6 +132,7 @@ public class MainActivity extends AppCompatActivity  {
         // For "lean back" mode, remove SYSTEM_UI_FLAG_IMMERSIVE.
         // Or for "sticky immersive," replace it with SYSTEM_UI_FLAG_IMMERSIVE_STICKY
         View decorView = getWindow().getDecorView();
+        decorView.setAlpha(1);
         decorView.setSystemUiVisibility(
                 View.SYSTEM_UI_FLAG_IMMERSIVE
                         // Set the content to appear under the system bars so that the
@@ -139,6 +149,7 @@ public class MainActivity extends AppCompatActivity  {
 // except for the ones that make the content appear under the system bars.
     private void showSystemUI() {
         View decorView = getWindow().getDecorView();
+        decorView.setAlpha(1);
         decorView.setSystemUiVisibility(
                 View.SYSTEM_UI_FLAG_LAYOUT_STABLE
                         | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION

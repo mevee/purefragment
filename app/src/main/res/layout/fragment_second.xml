@@ -17,6 +17,7 @@
         android:src="@drawable/ic_keyboard_arrow_left_black_24dp" />
 
     <RelativeLayout
+        android:id="@+id/coindistribution"
         android:layout_width="@dimen/margin60dp"
         android:layout_height="@dimen/backbuttonwidth"
         android:layout_gravity="top|left"

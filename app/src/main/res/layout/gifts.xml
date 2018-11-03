@@ -5,6 +5,7 @@
     android:layout_gravity="bottom"
     android:background="@drawable/bg_of_dialog"
     >
+
 <TextView
     android:layout_width="60dp"
     android:layout_height="wrap_content"

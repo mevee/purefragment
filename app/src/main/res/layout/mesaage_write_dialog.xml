@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constrainq"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+     >
+
+<RelativeLayout
+    android:id="@+id/rlmessage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_lightblue"
+    android:layout_margin="2dp">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="207dp"
+        android:layout_height="153dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="20dp" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_above="@+id/send_message"
+        android:layout_toRightOf="@+id/message_write"
+        android:layout_width="63dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Switch" />
+
+    <EditText
+        android:id="@+id/message_write"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recyclerView"
+        android:background="@drawable/bg_of_dialog"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+    <Button
+        android:id="@+id/send_message"
+        android:layout_below="@+id/recyclerView"
+        android:layout_toRightOf="@+id/message_write"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+</RelativeLayout>
+    <ImageView
+        android:layout_below="@+id/rlmessage"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:rotation="180"
+        android:background="@drawable/bottem_notch_dialog_bg"/>
+
+</RelativeLayout>

@@ -35,7 +35,7 @@
     <TextView
         android:id="@+id/content_of_dialog"
         android:layout_width="277dp"
-        android:layout_height="89dp"
+        android:layout_height="99dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
@@ -43,7 +43,7 @@
         android:layout_marginTop="8dp"
         android:background="@drawable/dialog_text_view_bg"
         android:gravity="center"
-        android:text="TextView"
+        android:text="@string/exitdialogcon"
         android:textColor="@color/colorWhite"
         app:fontFamily="@font/varelaround_regular"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -60,8 +60,8 @@
         android:layout_marginStart="64dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/dialog_text_view_bg"
-        android:padding="2dp"
-        android:text="@android:string/no"
+        android:padding="4dp"
+        android:text="@string/yes"
         android:textColor="@color/colorWhite"
         app:fontFamily="@font/raleway_bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -71,15 +71,16 @@
 
     <TextView
         android:id="@+id/tv_ok"
-        android:layout_width="56dp"
-        android:layout_height="19dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="64dp"
         android:layout_marginRight="64dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/dialog_text_view_bg"
-        android:gravity="center_horizontal|center"
-        android:text="yes"
+        android:padding="4dp"
+        android:gravity="center"
+        android:text="@string/no"
         android:textColor="@color/colorWhite"
         app:fontFamily="@font/raleway_bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -87,22 +88,4 @@
         app:layout_constraintTop_toBottomOf="@+id/content_of_dialog"
         app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="65dp"
-        android:layout_height="20dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/dialog_text_view_bg"
-        android:gravity="center"
-        android:paddingBottom="2dp"
-        android:text="JOIN"
-        android:textColor="@android:color/white"
-        android:visibility="gone"
-        app:fontFamily="@font/raleway_bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/content_of_dialog" />
-
-</android.support.constraint.ConstraintLayout>
+   </android.support.constraint.ConstraintLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     >
+    <RelativeLayout
+        android:id="@+id/rr1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bg_new"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_lightblue"
+            android:layout_margin="4dp"
+            >
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                >
+            </GridView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_below="@+id/rr1"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:rotation="180"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/bottem_notch_dialog_bg"/>
+
+</RelativeLayout>

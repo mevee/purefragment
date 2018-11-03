@@ -1,4 +1,4 @@
-#Wed Oct 31 19:20:36 IST 2018
-base.0=/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/transforms/dexMerger/debug/162
+#Sat Nov 03 18:28:03 IST 2018
+base.0=/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/transforms/dexMerger/debug/179
 path.0=classes.dex
 renamed.0=classes.dex

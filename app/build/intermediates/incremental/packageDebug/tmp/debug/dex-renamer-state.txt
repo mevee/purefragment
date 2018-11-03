@@ -1,4 +1,4 @@
-#Wed Oct 31 19:32:48 IST 2018
+#Sat Nov 03 18:51:43 IST 2018
 path.3=classes.dex
 path.2=classes.dex
 path.1=classes.dex
@@ -7,7 +7,7 @@ renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-base.3=/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/transforms/dexMerger/debug/166
-base.2=/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/transforms/dexMerger/debug/164
-base.1=/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/transforms/dexMerger/debug/167
-base.0=/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/transforms/dexMerger/debug/165
+base.3=/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/transforms/dexMerger/debug/183
+base.2=/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/transforms/dexMerger/debug/181
+base.1=/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/transforms/dexMerger/debug/184
+base.0=/Users/vikesh/AndroidStudioProjects/PureFragments/app/build/intermediates/transforms/dexMerger/debug/182
