@@ -28,7 +28,8 @@ public class ChatMessageDialog extends DialogFragment {
     private TextView tvMessage;
     private static final int USER_RED =1,USER_BLUE=2,USER_GREEN=3,USER_YELLOW=4;
 
-    public static ChatMessageDialog newInstance(int num,String s){
+    public static ChatMessageDialog newInstance(int num,String s,String ss){
+
         if (s!=null){message = s;}
         else message = "Empty Message";
 //        source = view;
@@ -142,9 +143,9 @@ public class ChatMessageDialog extends DialogFragment {
         int x1 = (int)(getResources().getDimension(R.dimen.chat_dialog_ofsetx)/getResources().getDisplayMetrics().density);
         int y1 = (int)(getResources().getDimension(R.dimen.chat_dialog_ofsety)/getResources().getDisplayMetrics().density);
 
-//        Just an example; edit to suit your needs.
+//        Just an exampl e; edit to suit your needs.
         params.x = x1;  // about half of confirm button size left of source view
-        params.y = y1;
+        params.y = y1+ 20;
 //        (sourceY/(getResources().getDisplayMetrics().density)); // above source view
 //        params.y =200;
 //        params.x =10;

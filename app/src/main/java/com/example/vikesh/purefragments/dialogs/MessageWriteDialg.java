@@ -16,7 +16,9 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -34,6 +36,8 @@ public class MessageWriteDialg extends DialogFragment {
     private TextView tvOk,tvCancel,tvtitle,tvcontent;
     private EditText etMessage;
     private Button btnOk;
+    private Switch chatswitch;
+    private static String IMAGEIS;
 
     public static MessageWriteDialg newInstance(int num,View view) {
         source = view;
@@ -51,26 +55,6 @@ public class MessageWriteDialg extends DialogFragment {
         super.onCreate(savedInstanceState);
         mNum = getArguments().getInt("num");
 
-//        // Pick a style based on the num.
-//        int style = DialogFragment.STYLE_NORMAL, theme = 0;
-//        switch ((mNum-1)%6) {
-//            case 1: style = DialogFragment.STYLE_NO_TITLE; break;
-//            case 2: style = DialogFragment.STYLE_NO_FRAME; break;
-//            case 3: style = DialogFragment.STYLE_NO_INPUT; break;
-//            case 4: style = DialogFragment.STYLE_NORMAL; break;
-//            case 5: style = DialogFragment.STYLE_NORMAL; break;
-//            case 6: style = DialogFragment.STYLE_NO_TITLE; break;
-//            case 7: style = DialogFragment.STYLE_NO_FRAME; break;
-//            case 8: style = DialogFragment.STYLE_NORMAL; break;
-//        }
-//        switch ((mNum-1)%6) {
-//            case 4: theme = android.R.style.Theme_Holo; break;
-//            case 5: theme = android.R.style.Theme_Holo_Light_Dialog; break;
-//            case 6: theme = android.R.style.Theme_Holo_Light; break;
-//            case 7: theme = android.R.style.Theme_Holo_Light_Panel; break;
-//            case 8: theme = android.R.style.Theme_Holo_Light; break;
-//        }
-//        setStyle(style, theme);
     }
 
     @Nullable
@@ -81,6 +65,14 @@ public class MessageWriteDialg extends DialogFragment {
 
         etMessage = view.findViewById(R.id.message_write);
         btnOk=view.findViewById(R.id.send_message);
+        chatswitch =view.findViewById(R.id.switch_chat);
+        chatswitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked)
+                    dismiss();
+            }
+        });
         btnOk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -183,7 +175,7 @@ public class MessageWriteDialg extends DialogFragment {
 //        }
 //        ft.addToBackStack(null);
         // Create and show the dialog.
-        DialogFragment newFragment = ChatMessageDialog.newInstance(2,message);
+        DialogFragment newFragment = ChatMessageDialog.newInstance(2,message,"e1");
         newFragment.show(ft, "message");
     }
 

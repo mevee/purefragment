@@ -5,51 +5,75 @@
     android:id="@+id/constrainq"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-
-     >
-
-<RelativeLayout
-    android:id="@+id/rlmessage"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:background="@drawable/bg_lightblue"
-    android:layout_margin="2dp">
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="207dp"
-        android:layout_height="153dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginTop="20dp" />
-
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_above="@+id/send_message"
-        android:layout_toRightOf="@+id/message_write"
-        android:layout_width="63dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:text="Switch" />
-
-    <EditText
-        android:id="@+id/message_write"
+    android:layout_margin="4dp">
+    <RelativeLayout
+        android:id="@+id/rlmessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/recyclerView"
-        android:background="@drawable/bg_of_dialog"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
-    <Button
-        android:id="@+id/send_message"
-        android:layout_below="@+id/recyclerView"
-        android:layout_toRightOf="@+id/message_write"
-        android:layout_width="wrap_content"
+        android:background="@drawable/dialog_bg_new">
+
+    <RelativeLayout
+        android:layout_width="303dp"
         android:layout_height="wrap_content"
-        android:text="Button" />
-</RelativeLayout>
+        android:background="@drawable/bg_lightblue"
+        android:layout_margin="4dp">
+
+    <TextView
+        android:id="@+id/textViewinnstructions"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/varelaround_regular"
+        android:maxLines="2"
+        android:gravity="center"
+        android:background="@drawable/chatwindowtextbg"
+        android:textColor="@color/colorWhite"
+        android:text="@string/chatinstructions" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/textViewinnstructions"
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:scrollbars="horizontal" />
+
+        <Switch
+            android:id="@+id/switch_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/recyclerView"
+            android:layout_toRightOf="@+id/message_write"
+            android:text="chat"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            android:id="@+id/message_write"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recyclerView"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/chatwindowtextbg"
+            android:ems="10"
+            android:hint="Tap here.."
+            android:gravity="left"
+            android:textColor="@color/colorWhite"
+            android:inputType="textPersonName"
+             />
+
+        <Button
+            android:id="@+id/send_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recyclerView"
+            android:layout_toRightOf="@+id/message_write"
+            android:layout_marginLeft="4dp"
+            android:text="Button" />
+    </RelativeLayout>
+    </RelativeLayout>
     <ImageView
         android:layout_below="@+id/rlmessage"
-        android:layout_width="50dp"
+        android:layout_width="32dp"
         android:layout_height="40dp"
         android:layout_marginLeft="10dp"
         android:rotation="180"

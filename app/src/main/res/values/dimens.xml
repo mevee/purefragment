@@ -75,6 +75,15 @@
     <dimen name="chat_dialog_ofsetx">60dp</dimen>
     <dimen name="chat_dialog_ofsety">160dp</dimen>
 
+    <dimen name="undodicewidth">260dp</dimen>
+    <dimen name="undodiceheight">210dp</dimen>
+    <dimen name="undodiceofsetx">10dp</dimen>
+    <dimen name="undodiceofsety">160dp</dimen>
+    <dimen name="innerlayoutheight">160dp</dimen>
+
+
+
+
     <dimen name="width8">8dp</dimen>
     <dimen name="lenth10">10dp</dimen>
     <dimen name="width15">15dp</dimen>

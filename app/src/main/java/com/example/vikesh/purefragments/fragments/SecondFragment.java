@@ -27,6 +27,7 @@ import com.example.vikesh.purefragments.bridge.ViewObservable;
 import com.example.vikesh.purefragments.dialogs.ChatMessageDialog;
 import com.example.vikesh.purefragments.dialogs.CoinDistribution;
 import com.example.vikesh.purefragments.dialogs.GameInfo;
+import com.example.vikesh.purefragments.dialogs.UndoDiceRollDialog;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
@@ -42,7 +43,7 @@ import java.util.Observer;
  */
 public class SecondFragment extends Fragment implements View.OnClickListener {
     private int viewCount,mStackLevel;
-    private View mView, rootView,chat,emoji,gameinfo,coindistribution;
+    private View mView, rootView,chat,emoji,gameinfo,coindistribution,undoDice;
     private Window window;
     private View boardGame, btnonplay, btnGoBack;
     private ImageView ludoRed, ludoYellow, ludoGreen, ludoBlue;
@@ -103,6 +104,12 @@ public class SecondFragment extends Fragment implements View.OnClickListener {
             @Override
             public void onClick(View v) {
                 showGameInfoDialog();
+            }
+        });
+        undoDice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showUndoDialog();
             }
         });
         coindistribution.setOnClickListener(new View.OnClickListener() {
@@ -220,6 +227,7 @@ public class SecondFragment extends Fragment implements View.OnClickListener {
         gifts2 = mView.findViewById(R.id.giftblue);
 
         gameinfo = mView.findViewById(R.id.info);
+        undoDice = mView.findViewById(R.id.undo_dialog_trigger);
 
         coindistribution = mView.findViewById(R.id.coindistribution);
 
@@ -349,17 +357,10 @@ public class SecondFragment extends Fragment implements View.OnClickListener {
 //        // in a transaction.  We also want to remove any currently showing
 //        // dialog, so make our own transaction and take care of that here.
         FragmentTransaction ft = getFragmentManager().beginTransaction();
-        Fragment prev = getFragmentManager().findFragmentByTag("dialog");
-        if (prev != null) {
-            ft.remove(prev);
-        }
-        ft.addToBackStack(null);
-
         // Create and show the dialog.
         DialogFragment newFragment = Dialogs.newInstance(mStackLevel);
         newFragment.show(ft, "dialog");
     }
-
     private void userInfoDialog() {
         mStackLevel++;
 //
@@ -377,7 +378,6 @@ public class SecondFragment extends Fragment implements View.OnClickListener {
         DialogFragment newFragment = UserInfoDalog.newInstance(mStackLevel);
         newFragment.show(ft, "dialoginfo");
     }
-
     private void showGiftsDialog() {
         mStackLevel++;
 
@@ -385,58 +385,30 @@ public class SecondFragment extends Fragment implements View.OnClickListener {
 //        // in a transaction.  We also want to remove any currently showing
 //        // dialog, so make our own transaction and take care of that here.
         FragmentTransaction ft = getFragmentManager().beginTransaction();
-        Fragment prev = getFragmentManager().findFragmentByTag("dialoggift");
-        if (prev != null) {
-            ft.remove(prev);
-        }
-        ft.addToBackStack(null);
         // Create and show the dialog.
         DialogFragment newFragment = com.example.vikesh.purefragments.fragments.GiftsDialog.newInstance(mStackLevel);
         newFragment.show(ft, "dialoggift");
     }
-
     private void showAskForChatEanbleDialog() {
         mStackLevel++;
-
         FragmentTransaction ft = getFragmentManager().beginTransaction();
-        Fragment prev = getFragmentManager().findFragmentByTag("chatenable");
-        if (prev != null) {
-            ft.remove(prev);
-        }
-        ft.addToBackStack(null);
         // Create and show the dialog.
         DialogFragment newFragment = com.example.vikesh.purefragments.fragments.AskForChatEnableDialog.newInstance(mStackLevel,userred);
         newFragment.show(ft, "chatenable");
     }
-
     private void showEmojiDialog() {
         mStackLevel++;
 
         FragmentTransaction ft = getFragmentManager().beginTransaction();
-        Fragment prev = getFragmentManager().findFragmentByTag("emoji");
-        if (prev != null) {
-            ft.remove(prev);
-        }
-        ft.addToBackStack(null);
-        // Create and show the dialog.
+
         DialogFragment newFragment = EmojiDialog.newInstance(mStackLevel,userred);
         newFragment.show(ft, "emoji");
     }
-
     private void showGameInfoDialog() {
         mStackLevel++;
-//
-//        ViewObservable source = new ViewObservable();
-//        source.setSource(gameinfo);
-
 
     FragmentTransaction ft = getFragmentManager().beginTransaction();
-        Fragment prev = getFragmentManager().findFragmentByTag("emoji");
-        if (prev != null) {
-            ft.remove(prev);
-        }
-        ft.addToBackStack(null);
-        // Create and show the dialog.
+
         DialogFragment newFragment = GameInfo.newInstance(mStackLevel,gameinfo);
         newFragment.show(ft, "emoji");
     }
@@ -444,27 +416,14 @@ public class SecondFragment extends Fragment implements View.OnClickListener {
         mStackLevel++;
 
         FragmentTransaction ft = getFragmentManager().beginTransaction();
-        Fragment prev = getFragmentManager().findFragmentByTag("emoji");
-        if (prev != null) {
-            ft.remove(prev);
-        }
-        ft.addToBackStack(null);
-        // Create and show the dialog.
         DialogFragment newFragment = CoinDistribution.newInstance(mStackLevel,coindistribution);
         newFragment.show(ft, "emoji");
     }
-
-    private void showMessageDialog() {
+    private void showUndoDialog() {
         mStackLevel++;
         FragmentTransaction ft = getFragmentManager().beginTransaction();
-        Fragment prev = getFragmentManager().findFragmentByTag("message");
-        if (prev != null) {
-            ft.remove(prev);
-        }
-        ft.addToBackStack(null);
-        // Create and show the dialog.
-        DialogFragment newFragment = ChatMessageDialog.newInstance(mStackLevel,"hellow friends");
-        newFragment.show(ft, "message");
+        DialogFragment newFragment = UndoDiceRollDialog.newInstance(mStackLevel,undoDice);
+        newFragment.show(ft, "undodialog");
     }
 
 }

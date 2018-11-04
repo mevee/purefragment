@@ -453,6 +453,7 @@
             android:layout_marginTop="5dp">
 
             <ImageView
+                android:id="@+id/undo_dialog_trigger"
                 android:layout_width="@dimen/width24"
                 android:layout_height="@dimen/width24"
                 android:layout_marginTop="4dp"

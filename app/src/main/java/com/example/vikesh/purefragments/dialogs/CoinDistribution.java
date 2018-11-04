@@ -110,7 +110,8 @@ public class CoinDistribution extends DialogFragment {
         int y1 = (int)(getResources().getDimension(R.dimen.golddis_dialogofsety)/getResources().getDisplayMetrics().density);
 
         // Just an example; edit to suit your needs.
-        params.x = sourceX - dpToPx(0); // about half of confirm button size left of source view
+//        params.x = sourceX - dpToPx(0); // about half of confirm button size left of source view
+      params.x =source.getLeft();
         params.y = sourceY - (y1); // above source view
 
         window.setAttributes(params);

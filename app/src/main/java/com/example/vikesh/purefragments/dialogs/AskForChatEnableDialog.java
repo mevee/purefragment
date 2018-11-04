@@ -29,15 +29,14 @@ public class AskForChatEnableDialog extends DialogFragment {
 
     private static View source;
 
-
     public AskForChatEnableDialog() {
+
     }
 
     public static AskForChatEnableDialog newInstance(int num, View view) {
          source = view;
         return new AskForChatEnableDialog();
     }
-
 
     @Nullable
     @Override
@@ -150,18 +149,10 @@ public class AskForChatEnableDialog extends DialogFragment {
 
     private void showMessageWriteDialog(){
 
-//        Fragment fm = getFragmentManager().findFragmentByTag("chatenable");
         FragmentTransaction ft = getFragmentManager().beginTransaction();
-//        Fragment prev = getFragmentManager().findFragmentByTag("messagewrite");
-//        if (prev != null) {
-//            ft.remove(prev);
-//        }
-//        ft.addToBackStack(null);
         // Create and show the dialog.
         DialogFragment newFragment = MessageWriteDialg.newInstance(1,getView().findViewById(R.id.emoji_layout));
         newFragment.show(ft, "messagewrite");
-//        if (fm instanceof AskForChatEnableDialog){
-//            getFragmentManager().popBackStack("chatenable",1);
-//        }
+
     }
 }

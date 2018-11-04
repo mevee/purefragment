@@ -22,6 +22,9 @@
     <string name="voicechat">Voice Chat:</string>
 
     <string name="coindisttibution">Coin Distribution</string>
+    <string name="chatinstructions">Use of abusive language or harassment would result in chat ban</string>
+    <string name="undodicerolltag">Undo Dice Roll</string>
+    <string name="undodiceinstruction">Tap this within 2 secs after rolling dice to undo dice result</string>
 
     <string name="rank1">1st Rank:</string>
     <string name="rank2">2nd Rank:</string>
